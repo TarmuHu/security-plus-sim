@@ -1,0 +1,662 @@
+[
+  {
+    "id": "d1-050",
+    "type": "mcq_single",
+    "domain": 1,
+    "objective": "1.1",
+    "stem": "A login banner that states only authorized users may continue is BEST classified as which control function?",
+    "choices": [
+      { "id": "A", "text": "Directive" },
+      { "id": "B", "text": "Corrective" },
+      { "id": "C", "text": "Compensating" },
+      { "id": "D", "text": "Physical" }
+    ],
+    "answer": ["A"],
+    "explanation": "Banners and AUPs instruct required behavior, which is a directive function. They may also deter, but the stem emphasizes the instruction itself.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d1-051",
+    "type": "mcq_single",
+    "domain": 1,
+    "objective": "1.2",
+    "stem": "Which scenario BEST illustrates non-repudiation?",
+    "choices": [
+      { "id": "A", "text": "A sender’s private key creates a digital signature that the recipient can verify" },
+      { "id": "B", "text": "A firewall drops packets from an untrusted network" },
+      { "id": "C", "text": "A UPS keeps servers online during a brief outage" },
+      { "id": "D", "text": "A VLAN separates guest Wi-Fi from corporate hosts" }
+    ],
+    "answer": ["A"],
+    "explanation": "Non-repudiation means a party cannot credibly deny an action; digital signatures with private keys provide strong evidence of origin.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d1-052",
+    "type": "mcq_single",
+    "domain": 1,
+    "objective": "1.3",
+    "stem": "Which change-management artifact MOST clearly documents who approved a production firewall rule change and when?",
+    "choices": [
+      { "id": "A", "text": "A change ticket / change record" },
+      { "id": "B", "text": "A packet capture of the rule match" },
+      { "id": "C", "text": "An attacker’s C2 domain list" },
+      { "id": "D", "text": "A rainbow table" }
+    ],
+    "answer": ["A"],
+    "explanation": "Change tickets capture request, impact, approval, implementation window, and rollback — the audit trail for who authorized what.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d1-053",
+    "type": "mcq_single",
+    "domain": 1,
+    "objective": "1.4",
+    "stem": "Which mode provides confidentiality and integrity in a single authenticated encryption construction commonly used with AES?",
+    "choices": [
+      { "id": "A", "text": "GCM (Galois/Counter Mode)" },
+      { "id": "B", "text": "ECB" },
+      { "id": "C", "text": "CRC-32 alone" },
+      { "id": "D", "text": "ROT13" }
+    ],
+    "answer": ["A"],
+    "explanation": "AES-GCM is an AEAD mode that encrypts and authenticates. ECB is weak for patterned data; CRC is not cryptographic integrity; ROT13 is not encryption.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d1-054",
+    "type": "mcq_single",
+    "domain": 1,
+    "objective": "1.4",
+    "stem": "Perfect forward secrecy (PFS) is MOST directly provided by which key-exchange approach?",
+    "choices": [
+      { "id": "A", "text": "Ephemeral Diffie–Hellman (DHE/ECDHE)" },
+      { "id": "B", "text": "Reusing one long-lived RSA private key to encrypt every session key forever" },
+      { "id": "C", "text": "Publishing the session key in DNS TXT" },
+      { "id": "D", "text": "Disabling TLS entirely" }
+    ],
+    "answer": ["A"],
+    "explanation": "Ephemeral DH/ECDHE creates fresh session keys so compromise of a long-term key later does not decrypt past sessions.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d1-055",
+    "type": "mcq_multi",
+    "domain": 1,
+    "objective": "1.5",
+    "stem": "Which TWO statements about hashing are TRUE?",
+    "choices": [
+      { "id": "A", "text": "A cryptographic hash produces a fixed-length digest" },
+      { "id": "B", "text": "Hashing alone encrypts data so it can be decrypted with a key" },
+      { "id": "C", "text": "Changing one input bit should drastically change the digest" },
+      { "id": "D", "text": "MD5 is preferred for new password storage designs" }
+    ],
+    "answer": ["A", "C"],
+    "explanation": "Hashes are one-way fixed-length digests with avalanche effect. They do not encrypt/decrypt; MD5 is broken for security use.",
+    "difficulty": "medium"
+  },
+
+  {
+    "id": "d2-062",
+    "type": "mcq_single",
+    "domain": 2,
+    "objective": "2.1",
+    "stem": "A competitor hires contractors to steal a product roadmap before launch. Which threat actor type BEST fits?",
+    "choices": [
+      { "id": "A", "text": "Competitor / industrial espionage" },
+      { "id": "B", "text": "Hacktivist primarily seeking publicity for a social cause" },
+      { "id": "C", "text": "Script kiddie with no target preference" },
+      { "id": "D", "text": "Nation-state nuclear weapons program" }
+    ],
+    "answer": ["A"],
+    "explanation": "Theft of commercial IP for business advantage is classic competitor/espionage motivation, not ideology or random curiosity.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d2-063",
+    "type": "mcq_single",
+    "domain": 2,
+    "objective": "2.2",
+    "stem": "An attacker calls the help desk claiming to be a VP locked out of email and pressures the agent to reset MFA. This is BEST described as:",
+    "choices": [
+      { "id": "A", "text": "Vishing (voice phishing) / social engineering" },
+      { "id": "B", "text": "SQL injection" },
+      { "id": "C", "text": "A watering hole on a news site" },
+      { "id": "D", "text": "A cryptographic downgrade attack" }
+    ],
+    "answer": ["A"],
+    "explanation": "Voice-channel impersonation to manipulate people is vishing/social engineering, not a technical injection or crypto attack.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d2-064",
+    "type": "mcq_single",
+    "domain": 2,
+    "objective": "2.2",
+    "stem": "Which attack relies on compromising a site that a target community is already known to visit?",
+    "choices": [
+      { "id": "A", "text": "Watering hole" },
+      { "id": "B", "text": "Pass-the-hash against a local SAM" },
+      { "id": "C", "text": "Cold-site failover" },
+      { "id": "D", "text": "Certificate pinning" }
+    ],
+    "answer": ["A"],
+    "explanation": "Watering-hole attacks poison a frequented site so targets get malware during normal browsing.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d2-065",
+    "type": "mcq_single",
+    "domain": 2,
+    "objective": "2.3",
+    "stem": "Which vulnerability is MOST associated with an application trusting user-controlled XML that loads external entities?",
+    "choices": [
+      { "id": "A", "text": "XXE (XML External Entity)" },
+      { "id": "B", "text": "CSRF" },
+      { "id": "C", "text": "VLAN hopping" },
+      { "id": "D", "text": "Bluejacking" }
+    ],
+    "answer": ["A"],
+    "explanation": "XXE abuses XML parsers that resolve external entities, often leading to file disclosure or SSRF-like effects.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d2-066",
+    "type": "mcq_single",
+    "domain": 2,
+    "objective": "2.3",
+    "stem": "A web app includes attacker-controlled script in pages viewed by other users. This is:",
+    "choices": [
+      { "id": "A", "text": "Cross-site scripting (XSS)" },
+      { "id": "B", "text": "ARP spoofing" },
+      { "id": "C", "text": "DNSSEC validation failure only" },
+      { "id": "D", "text": "A cold aisle containment issue" }
+    ],
+    "answer": ["A"],
+    "explanation": "XSS injects script into a victim’s browser context via a vulnerable web application.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d2-067",
+    "type": "mcq_single",
+    "domain": 2,
+    "objective": "2.4",
+    "stem": "Which mitigation BEST reduces risk from credential stuffing against a public login portal?",
+    "choices": [
+      { "id": "A", "text": "MFA plus rate limiting / bot detection" },
+      { "id": "B", "text": "Disabling TLS so logins are faster" },
+      { "id": "C", "text": "Publishing all password hashes on a wiki" },
+      { "id": "D", "text": "Using WEP on the corporate SSID" }
+    ],
+    "answer": ["A"],
+    "explanation": "Credential stuffing replays leaked username/password pairs; MFA and abuse controls blunt automated reuse even when passwords match.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d2-068",
+    "type": "mcq_single",
+    "domain": 2,
+    "objective": "2.4",
+    "stem": "Input validation and parameterized queries are PRIMARILY defenses against:",
+    "choices": [
+      { "id": "A", "text": "SQL injection" },
+      { "id": "B", "text": "Evil twin access points" },
+      { "id": "C", "text": "Tailgating into a data center" },
+      { "id": "D", "text": "UPS battery failure" }
+    ],
+    "answer": ["A"],
+    "explanation": "Parameterized queries keep user data out of the SQL parse tree, which is the core SQLi mitigation alongside validation.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d2-069",
+    "type": "mcq_multi",
+    "domain": 2,
+    "objective": "2.5",
+    "stem": "Which TWO indicators MOST strongly suggest an on-path (MitM) attack on a local network?",
+    "choices": [
+      { "id": "A", "text": "Unexpected ARP replies mapping the gateway IP to an attacker MAC" },
+      { "id": "B", "text": "TLS certificates suddenly presented for internal sites by an unknown issuer" },
+      { "id": "C", "text": "A scheduled weekly full backup completing successfully" },
+      { "id": "D", "text": "Correct NTP stratum from a trusted source" }
+    ],
+    "answer": ["A", "B"],
+    "explanation": "ARP spoofing and unexpected TLS interception are classic on-path signs. Healthy backups and good time sync are not MitM indicators.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "d2-070",
+    "type": "mcq_single",
+    "domain": 2,
+    "objective": "2.1",
+    "stem": "Which attribute BEST distinguishes an advanced persistent threat (APT) from a smash-and-grab commodity ransomware crew?",
+    "choices": [
+      { "id": "A", "text": "Long-term stealthy access and tailored objectives" },
+      { "id": "B", "text": "Exclusive use of port 80" },
+      { "id": "C", "text": "Inability to use phishing" },
+      { "id": "D", "text": "Never targeting governments or critical infrastructure" }
+    ],
+    "answer": ["A"],
+    "explanation": "APTs emphasize persistence, stealth, and strategic goals; many also use phishing. Port choice alone does not define APT.",
+    "difficulty": "medium"
+  },
+
+  {
+    "id": "d3-054",
+    "type": "mcq_single",
+    "domain": 3,
+    "objective": "3.1",
+    "stem": "In a public cloud IaaS model, who is TYPICALLY responsible for patching the guest operating system?",
+    "choices": [
+      { "id": "A", "text": "The customer" },
+      { "id": "B", "text": "The cloud provider only, in all cases" },
+      { "id": "C", "text": "ICANN" },
+      { "id": "D", "text": "The certificate transparency log operator" }
+    ],
+    "answer": ["A"],
+    "explanation": "Under shared responsibility for IaaS, the provider secures the hypervisor/facility; the customer generally patches the OS, apps, and data.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d3-055",
+    "type": "mcq_single",
+    "domain": 3,
+    "objective": "3.1",
+    "stem": "Which cloud control sits between users and SaaS apps to enforce DLP and access policies?",
+    "choices": [
+      { "id": "A", "text": "CASB (Cloud Access Security Broker)" },
+      { "id": "B", "text": "A cold site" },
+      { "id": "C", "text": "A hardware security module used only offline" },
+      { "id": "D", "text": "A plotter in the print room" }
+    ],
+    "answer": ["A"],
+    "explanation": "CASBs broker and monitor access to cloud services, often adding SSO, DLP, and anomaly detection for SaaS.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d3-056",
+    "type": "mcq_single",
+    "domain": 3,
+    "objective": "3.2",
+    "stem": "Placing a jump server (bastion) in front of sensitive admin interfaces is PRIMARILY an example of:",
+    "choices": [
+      { "id": "A", "text": "Reducing the administrative attack surface / controlled access path" },
+      { "id": "B", "text": "Increasing open RDP exposure to the entire Internet" },
+      { "id": "C", "text": "Disabling MFA for privileged users" },
+      { "id": "D", "text": "Replacing backups with screenshots" }
+    ],
+    "answer": ["A"],
+    "explanation": "Bastion/jump hosts concentrate and control admin access so management ports are not broadly exposed.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d3-057",
+    "type": "mcq_single",
+    "domain": 3,
+    "objective": "3.2",
+    "stem": "Microsegmentation in a data center MOST directly helps by:",
+    "choices": [
+      { "id": "A", "text": "Limiting east-west lateral movement between workloads" },
+      { "id": "B", "text": "Guaranteeing zero software bugs" },
+      { "id": "C", "text": "Removing the need for authentication" },
+      { "id": "D", "text": "Making all traffic cleartext by design" }
+    ],
+    "answer": ["A"],
+    "explanation": "Fine-grained zoning/firewalling between workloads constrains lateral movement after initial compromise.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d3-058",
+    "type": "mcq_single",
+    "domain": 3,
+    "objective": "3.3",
+    "stem": "Which wireless setting is MOST appropriate for a corporate office that can support per-user credentials?",
+    "choices": [
+      { "id": "A", "text": "WPA3-Enterprise (or WPA2-Enterprise) with 802.1X" },
+      { "id": "B", "text": "Open network with no authentication" },
+      { "id": "C", "text": "WEP with a shared static key" },
+      { "id": "D", "text": "WPS PIN enrollment left enabled everywhere" }
+    ],
+    "answer": ["A"],
+    "explanation": "Enterprise Wi-Fi with 802.1X gives per-user auth via RADIUS; WEP/open/WPS are weak or inappropriate for corporate use.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d3-059",
+    "type": "mcq_single",
+    "domain": 3,
+    "objective": "3.3",
+    "stem": "DNSSEC is designed to protect against which problem?",
+    "choices": [
+      { "id": "A", "text": "Forged DNS answers (authenticity/integrity of DNS data)" },
+      { "id": "B", "text": "Encrypting all web traffic end-to-end by itself" },
+      { "id": "C", "text": "Replacing HTTPS certificates" },
+      { "id": "D", "text": "Stopping all DDoS attacks at the ISP" }
+    ],
+    "answer": ["A"],
+    "explanation": "DNSSEC signs DNS records so resolvers can detect spoofed answers; it does not encrypt HTTP or replace TLS.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d3-060",
+    "type": "mcq_multi",
+    "domain": 3,
+    "objective": "3.4",
+    "stem": "Which TWO are characteristics of Infrastructure as Code (IaC) security?",
+    "choices": [
+      { "id": "A", "text": "Templates can be reviewed and scanned before deployment" },
+      { "id": "B", "text": "Misconfigurations can be replicated at scale if templates are wrong" },
+      { "id": "C", "text": "IaC eliminates the need for identity and access controls" },
+      { "id": "D", "text": "IaC guarantees malware cannot run in containers" }
+    ],
+    "answer": ["A", "B"],
+    "explanation": "IaC enables reviewable, repeatable infrastructure — including repeatable mistakes — and still needs IAM and runtime security.",
+    "difficulty": "hard"
+  },
+
+  {
+    "id": "d4-069",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.1",
+    "stem": "Which tool class correlates logs from many sources to detect patterns and support investigations?",
+    "choices": [
+      { "id": "A", "text": "SIEM" },
+      { "id": "B", "text": "A single unmanaged spreadsheet with no timestamps" },
+      { "id": "C", "text": "A screen saver" },
+      { "id": "D", "text": "A toner cartridge" }
+    ],
+    "answer": ["A"],
+    "explanation": "SIEMs aggregate and correlate security event data for detection, alerting, and investigation.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d4-070",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.1",
+    "stem": "SOAR platforms are MOST valuable because they:",
+    "choices": [
+      { "id": "A", "text": "Automate orchestrated response steps using playbooks" },
+      { "id": "B", "text": "Replace the need for any human analysts forever" },
+      { "id": "C", "text": "Generate TLS certificates without a CA" },
+      { "id": "D", "text": "Physically lock datacenter doors" }
+    ],
+    "answer": ["A"],
+    "explanation": "SOAR orchestrates tools and automates repeatable IR/ops workflows; humans still handle judgment and exceptions.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d4-071",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.4",
+    "stem": "Which identity protocol is BEST described as an authorization/delegation framework rather than a complete login identity layer by itself?",
+    "choices": [
+      { "id": "A", "text": "OAuth 2.0" },
+      { "id": "B", "text": "Kerberos TGT issuance alone as the only Internet SSO standard" },
+      { "id": "C", "text": "FTP anonymous login" },
+      { "id": "D", "text": "WEP shared key" }
+    ],
+    "answer": ["A"],
+    "explanation": "OAuth 2.0 delegates access; OpenID Connect adds the identity layer commonly used for login on top of OAuth.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d4-072",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.5",
+    "stem": "A vulnerability scan run with valid credentials against hosts typically yields:",
+    "choices": [
+      { "id": "A", "text": "Deeper findings (missing patches, local configs) than unauthenticated scans" },
+      { "id": "B", "text": "Zero findings by definition" },
+      { "id": "C", "text": "Only physical lock failures" },
+      { "id": "D", "text": "Proof that exploit code always succeeded" }
+    ],
+    "answer": ["A"],
+    "explanation": "Credentialed scans authenticate and inspect from inside the OS view, revealing more than external unauthenticated checks. They are not exploits.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d4-073",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.6",
+    "stem": "In incident response, which activity belongs in the preparation phase?",
+    "choices": [
+      { "id": "A", "text": "Building playbooks, contacts, tooling, and training before an incident" },
+      { "id": "B", "text": "Wiping all logs immediately when an alert fires" },
+      { "id": "C", "text": "Paying every ransom without legal review" },
+      { "id": "D", "text": "Skipping evidence handling rules" }
+    ],
+    "answer": ["A"],
+    "explanation": "Preparation is proactive readiness. Destroying logs or skipping process harms response and forensics.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d4-074",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.7",
+    "stem": "Which Wi-Fi personal mode replaces the WPA2 PSK handshake with SAE?",
+    "choices": [
+      { "id": "A", "text": "WPA3-Personal" },
+      { "id": "B", "text": "WEP" },
+      { "id": "C", "text": "WPA with TKIP only" },
+      { "id": "D", "text": "Open captive portal without encryption" }
+    ],
+    "answer": ["A"],
+    "explanation": "WPA3-Personal uses Simultaneous Authentication of Equals (SAE) instead of the older PSK 4-way handshake weaknesses.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d4-075",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.7",
+    "stem": "Disabling WPS on an access point is recommended PRIMARILY because:",
+    "choices": [
+      { "id": "A", "text": "WPS PIN/push-button enrollment has a history of weak attack resistance" },
+      { "id": "B", "text": "WPS is required for IPsec ESP" },
+      { "id": "C", "text": "WPS replaces the need for any Wi-Fi password forever safely" },
+      { "id": "D", "text": "WPS encrypts Layer 3 only" }
+    ],
+    "answer": ["A"],
+    "explanation": "WPS has well-known weaknesses; hardening guides typically recommend disabling it.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d4-076",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.8",
+    "stem": "During incident containment, which action BEST balances stopping spread with preserving evidence?",
+    "choices": [
+      { "id": "A", "text": "Isolate affected hosts from the network while documenting actions and preserving volatile data when possible" },
+      { "id": "B", "text": "Power-wash every disk immediately with no notes" },
+      { "id": "C", "text": "Announce credentials of compromised accounts on social media" },
+      { "id": "D", "text": "Disable all logging enterprise-wide" }
+    ],
+    "answer": ["A"],
+    "explanation": "Containment isolates to limit damage while disciplined handling protects investigatory value; indiscriminate wiping destroys evidence.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d4-077",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.8",
+    "stem": "Mapping observed attacker behaviors to MITRE ATT&CK techniques during response MOST helps teams:",
+    "choices": [
+      { "id": "A", "text": "Communicate TTPs and identify detection/coverage gaps" },
+      { "id": "B", "text": "Calculate SLE automatically" },
+      { "id": "C", "text": "Issue DV certificates" },
+      { "id": "D", "text": "Replace physical locks" }
+    ],
+    "answer": ["A"],
+    "explanation": "ATT&CK provides a shared language for adversary behaviors and helps prioritize detections and controls.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d4-078",
+    "type": "mcq_multi",
+    "domain": 4,
+    "objective": "4.6",
+    "stem": "Which TWO are appropriate order-of-volatility considerations when collecting evidence?",
+    "choices": [
+      { "id": "A", "text": "Capture RAM before shutting down a system when memory evidence matters" },
+      { "id": "B", "text": "Collect the most volatile data before less volatile storage when feasible" },
+      { "id": "C", "text": "Always reformat the disk before imaging" },
+      { "id": "D", "text": "Delete logs to save space before acquisition" }
+    ],
+    "answer": ["A", "B"],
+    "explanation": "Volatile evidence (memory, network state) disappears quickly; imaging/preservation comes before destructive actions.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "d4-079",
+    "type": "mcq_single",
+    "domain": 4,
+    "objective": "4.4",
+    "stem": "Just-in-time (JIT) privileged access MOST improves security by:",
+    "choices": [
+      { "id": "A", "text": "Granting elevated rights only for a limited approved window" },
+      { "id": "B", "text": "Giving every user permanent domain admin" },
+      { "id": "C", "text": "Removing authentication from admin tools" },
+      { "id": "D", "text": "Sharing one break-glass password on a whiteboard" }
+    ],
+    "answer": ["A"],
+    "explanation": "JIT shrinks standing privilege, reducing the window an attacker can abuse admin rights.",
+    "difficulty": "medium"
+  },
+
+  {
+    "id": "d5-059",
+    "type": "mcq_single",
+    "domain": 5,
+    "objective": "5.1",
+    "stem": "Which document MOST directly sets rules for acceptable personal use of company systems?",
+    "choices": [
+      { "id": "A", "text": "Acceptable Use Policy (AUP)" },
+      { "id": "B", "text": "BGP routing table" },
+      { "id": "C", "text": "Disk partition scheme" },
+      { "id": "D", "text": "ARP cache" }
+    ],
+    "answer": ["A"],
+    "explanation": "AUPs define permitted and prohibited use of organizational IT resources.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d5-060",
+    "type": "mcq_single",
+    "domain": 5,
+    "objective": "5.2",
+    "stem": "ALE is calculated as:",
+    "choices": [
+      { "id": "A", "text": "SLE × ARO" },
+      { "id": "B", "text": "MTTR × MTBF" },
+      { "id": "C", "text": "RTO − RPO" },
+      { "id": "D", "text": "CVE count × CVSS only" }
+    ],
+    "answer": ["A"],
+    "explanation": "Annualized Loss Expectancy equals Single Loss Expectancy times Annualized Rate of Occurrence.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d5-061",
+    "type": "mcq_single",
+    "domain": 5,
+    "objective": "5.3",
+    "stem": "Which privacy practice BEST matches “collect only what you need”?",
+    "choices": [
+      { "id": "A", "text": "Data minimization" },
+      { "id": "B", "text": "Indiscriminate logging of full payment card data in cleartext forever" },
+      { "id": "C", "text": "Sharing HR files to public cloud without review" },
+      { "id": "D", "text": "Disabling access reviews" }
+    ],
+    "answer": ["A"],
+    "explanation": "Data minimization limits collection and retention to what is necessary for stated purposes.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d5-062",
+    "type": "mcq_single",
+    "domain": 5,
+    "objective": "5.4",
+    "stem": "Mean Time to Recover (MTTR) in continuity discussions MOST closely measures:",
+    "choices": [
+      { "id": "A", "text": "How long recovery takes after a failure" },
+      { "id": "B", "text": "How much data loss is tolerable in time (that is RPO)" },
+      { "id": "C", "text": "The annual rate of occurrence" },
+      { "id": "D", "text": "The strength of an AES key in bits" }
+    ],
+    "answer": ["A"],
+    "explanation": "MTTR focuses on repair/recovery duration. RPO is about tolerable data-loss time; ARO is frequency; key length is crypto.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d5-063",
+    "type": "mcq_single",
+    "domain": 5,
+    "objective": "5.5",
+    "stem": "Before relying on a critical SaaS vendor for regulated data, which step is MOST important early in onboarding?",
+    "choices": [
+      { "id": "A", "text": "Assess security/privacy posture and contract terms (including audit rights and responsibilities)" },
+      { "id": "B", "text": "Grant the vendor unrestricted production admin with no review" },
+      { "id": "C", "text": "Disable MFA for the vendor’s accounts" },
+      { "id": "D", "text": "Skip reviewing the data flow because SaaS is always in-scope safe" }
+    ],
+    "answer": ["A"],
+    "explanation": "Third-party risk starts with understanding controls, data handling, and contractual obligations before deep integration.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d5-064",
+    "type": "mcq_single",
+    "domain": 5,
+    "objective": "5.5",
+    "stem": "A SOC 2 Type II report is valuable to customers PRIMARILY because it:",
+    "choices": [
+      { "id": "A", "text": "Provides independent assurance about controls over a period of time" },
+      { "id": "B", "text": "Guarantees zero vulnerabilities forever" },
+      { "id": "C", "text": "Replaces the customer’s own access reviews" },
+      { "id": "D", "text": "Is a substitute for encryption" }
+    ],
+    "answer": ["A"],
+    "explanation": "Type II reports evaluate operating effectiveness over a period via an independent auditor; they do not eliminate customer due diligence.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "d5-065",
+    "type": "mcq_single",
+    "domain": 5,
+    "objective": "5.6",
+    "stem": "Which exercise walks through an incident scenario via discussion without deploying production changes?",
+    "choices": [
+      { "id": "A", "text": "Tabletop exercise" },
+      { "id": "B", "text": "Full traffic fail-open test on live customers with no plan" },
+      { "id": "C", "text": "Ransomware detonation in production for fun" },
+      { "id": "D", "text": "Deleting backups to test restore speed" }
+    ],
+    "answer": ["A"],
+    "explanation": "Tabletops are discussion-based rehearsals of roles and decisions; they are lower risk than live simulations.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "d5-066",
+    "type": "mcq_multi",
+    "domain": 5,
+    "objective": "5.6",
+    "stem": "Which TWO outcomes should a good after-action review produce?",
+    "choices": [
+      { "id": "A", "text": "Documented timeline and root-cause insights" },
+      { "id": "B", "text": "Assignable improvement actions with owners" },
+      { "id": "C", "text": "Blame without process changes" },
+      { "id": "D", "text": "Deletion of all incident records to avoid audits" }
+    ],
+    "answer": ["A", "B"],
+    "explanation": "Effective AARs capture what happened and drive concrete improvements; hiding records or pure blame cultures do not improve resilience.",
+    "difficulty": "medium"
+  }
+]

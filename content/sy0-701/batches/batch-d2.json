@@ -1,0 +1,357 @@
+{
+  "mcq": [
+    {
+      "id": "d2-040",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "An email urges a CFO to wire funds urgently and spoofs the CEO’s display name. This is BEST described as:",
+      "choices": [
+        { "id": "A", "text": "Business email compromise / spear phishing" },
+        { "id": "B", "text": "SQL injection" },
+        { "id": "C", "text": "ARP poisoning" },
+        { "id": "D", "text": "Bluejacking" }
+      ],
+      "answer": ["A"],
+      "explanation": "Targeted executive fraud via email impersonation is BEC/spear phishing.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d2-041",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "Malware that encrypts files and demands payment is called:",
+      "choices": [
+        { "id": "A", "text": "Ransomware" },
+        { "id": "B", "text": "Adware" },
+        { "id": "C", "text": "A logic bomb only" },
+        { "id": "D", "text": "A honeypot" }
+      ],
+      "answer": ["A"],
+      "explanation": "Ransomware denies access to data until a ransom is paid.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d2-042",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.2",
+      "stem": "Which attack floods a service with traffic to deny legitimate users access?",
+      "choices": [
+        { "id": "A", "text": "Denial-of-service (DoS/DDoS)" },
+        { "id": "B", "text": "Pass-the-hash only" },
+        { "id": "C", "text": "Shimming" },
+        { "id": "D", "text": "Dumpster diving" }
+      ],
+      "answer": ["A"],
+      "explanation": "DoS/DDoS targets availability by overwhelming resources.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d2-043",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.3",
+      "stem": "An attacker injects malicious scripts that run in other users’ browsers via a vulnerable web form. This is:",
+      "choices": [
+        { "id": "A", "text": "Cross-site scripting (XSS)" },
+        { "id": "B", "text": "VLAN hopping" },
+        { "id": "C", "text": "Evil twin solely" },
+        { "id": "D", "text": "Cold boot attack" }
+      ],
+      "answer": ["A"],
+      "explanation": "XSS executes attacker script in victims’ browsers through untrusted input.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-044",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.3",
+      "stem": "Which vulnerability allows attackers to manipulate database queries through application input?",
+      "choices": [
+        { "id": "A", "text": "SQL injection" },
+        { "id": "B", "text": "SSID cloaking" },
+        { "id": "C", "text": "Cable plant tapping only" },
+        { "id": "D", "text": "RFID skimming of badges exclusively" }
+      ],
+      "answer": ["A"],
+      "explanation": "SQLi occurs when unsanitized input is concatenated into SQL statements.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d2-045",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.4",
+      "stem": "Which indicator MOST strongly suggests a workstation is beaconing to command-and-control?",
+      "choices": [
+        { "id": "A", "text": "Regular outbound HTTPS to a newly registered domain at odd hours" },
+        { "id": "B", "text": "Scheduled Windows Update checks" },
+        { "id": "C", "text": "DHCP lease renewals" },
+        { "id": "D", "text": "User opening a PDF from SharePoint" }
+      ],
+      "answer": ["A"],
+      "explanation": "Periodic callbacks to suspicious new domains are classic C2 beacons.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d2-046",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.4",
+      "stem": "Credential stuffing attacks primarily rely on:",
+      "choices": [
+        { "id": "A", "text": "Reused username/password pairs from prior breaches" },
+        { "id": "B", "text": "Physical theft of HSMs" },
+        { "id": "C", "text": "Misconfigured NTP only" },
+        { "id": "D", "text": "Toner cartridge exploits" }
+      ],
+      "answer": ["A"],
+      "explanation": "Attackers automate login attempts using leaked credentials across sites.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-047",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.5",
+      "stem": "Which mitigation BEST reduces successful phishing clicks long-term?",
+      "choices": [
+        { "id": "A", "text": "Ongoing user awareness training plus simulated phishing" },
+        { "id": "B", "text": "Disabling all email attachments forever without alternatives" },
+        { "id": "C", "text": "Painting the SOC blue" },
+        { "id": "D", "text": "Using Telnet for mail retrieval" }
+      ],
+      "answer": ["A"],
+      "explanation": "Training with realistic simulations improves recognition and reporting habits.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-048",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "A rogue AP advertising a familiar SSID to capture credentials is an:",
+      "choices": [
+        { "id": "A", "text": "Evil twin" },
+        { "id": "B", "text": "Watering hole exclusively" },
+        { "id": "C", "text": "Integer overflow" },
+        { "id": "D", "text": "Race condition in CPUs" }
+      ],
+      "answer": ["A"],
+      "explanation": "Evil twins impersonate legitimate wireless networks.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d2-049",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.2",
+      "stem": "On-path (man-in-the-middle) attackers MOST directly threaten which pair of goals?",
+      "choices": [
+        { "id": "A", "text": "Confidentiality and integrity of communications" },
+        { "id": "B", "text": "Only physical cage integrity" },
+        { "id": "C", "text": "Only printer availability" },
+        { "id": "D", "text": "Only DNSSEC key ceremonies" }
+      ],
+      "answer": ["A"],
+      "explanation": "On-path attackers can read and alter traffic without encryption/authentication.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-050",
+      "type": "mcq_multi",
+      "domain": 2,
+      "objective": "2.5",
+      "stem": "Which TWO controls help mitigate ransomware impact?",
+      "choices": [
+        { "id": "A", "text": "Immutable / offline backups" },
+        { "id": "B", "text": "Application allowlisting" },
+        { "id": "C", "text": "Disabling all logging" },
+        { "id": "D", "text": "Granting all users domain admin" }
+      ],
+      "answer": ["A", "B"],
+      "explanation": "Backups enable recovery; allowlisting blocks unauthorized encryptors.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d2-051",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.3",
+      "stem": "Directory traversal attacks try to:",
+      "choices": [
+        { "id": "A", "text": "Access files outside the web root using ../ sequences" },
+        { "id": "B", "text": "Upgrade TLS versions automatically" },
+        { "id": "C", "text": "Rotate Kerberos tickets legally" },
+        { "id": "D", "text": "Tune HVAC humidity" }
+      ],
+      "answer": ["A"],
+      "explanation": "Traversal abuses path handling to read or write unintended files.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-052",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.4",
+      "stem": "A sudden spike of failed logons across many accounts from one IP MOST likely indicates:",
+      "choices": [
+        { "id": "A", "text": "Password spraying or brute-force activity" },
+        { "id": "B", "text": "Normal SSO token refresh" },
+        { "id": "C", "text": "Certificate auto-enrollment" },
+        { "id": "D", "text": "NTP stratum change" }
+      ],
+      "answer": ["A"],
+      "explanation": "Mass authentication failures from one source suggest credential attacks.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-053",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "Supply-chain compromise of a widely used library primarily increases risk of:",
+      "choices": [
+        { "id": "A", "text": "Widespread trusted malware distribution" },
+        { "id": "B", "text": "Lower electricity bills" },
+        { "id": "C", "text": "Faster toner delivery" },
+        { "id": "D", "text": "Stronger WEP" }
+      ],
+      "answer": ["A"],
+      "explanation": "Downstream consumers inherit malicious updates from trusted vendors.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-054",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.5",
+      "stem": "Which control BEST reduces risk from unpatched third-party browser plugins?",
+      "choices": [
+        { "id": "A", "text": "Remove unused plugins and enforce automatic updates" },
+        { "id": "B", "text": "Increase DHCP lease time" },
+        { "id": "C", "text": "Disable disk encryption" },
+        { "id": "D", "text": "Share admin credentials" }
+      ],
+      "answer": ["A"],
+      "explanation": "Attack surface shrinks when unused plugins are removed and remaining ones stay patched.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-055",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.2",
+      "stem": "DNS spoofing that returns a malicious IP for a legitimate name primarily enables:",
+      "choices": [
+        { "id": "A", "text": "Redirecting users to attacker-controlled hosts" },
+        { "id": "B", "text": "Faster RAID rebuilds" },
+        { "id": "C", "text": "Automatic MFA enrollment" },
+        { "id": "D", "text": "Secure Boot enforcement" }
+      ],
+      "answer": ["A"],
+      "explanation": "Poisoned DNS answers send victims to the wrong destination.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-056",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.3",
+      "stem": "A buffer overflow exploit MOST commonly leads to:",
+      "choices": [
+        { "id": "A", "text": "Arbitrary code execution or process crash" },
+        { "id": "B", "text": "Guaranteed encryption of backups" },
+        { "id": "C", "text": "Improved least privilege" },
+        { "id": "D", "text": "Automatic certificate pinning" }
+      ],
+      "answer": ["A"],
+      "explanation": "Overwriting memory can hijack control flow or destabilize the process.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-057",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.4",
+      "stem": "Which tool category aggregates logs and alerts for threat detection across the enterprise?",
+      "choices": [
+        { "id": "A", "text": "SIEM" },
+        { "id": "B", "text": "DHCP only" },
+        { "id": "C", "text": "Label printer firmware" },
+        { "id": "D", "text": "CRT degausser" }
+      ],
+      "answer": ["A"],
+      "explanation": "SIEMs collect, correlate, and alert on security events.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d2-058",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.5",
+      "stem": "Microsegmentation between application tiers MOST helps contain:",
+      "choices": [
+        { "id": "A", "text": "Lateral movement after initial compromise" },
+        { "id": "B", "text": "Toner low alerts" },
+        { "id": "C", "text": "NTP drift alone" },
+        { "id": "D", "text": "Monitor brightness" }
+      ],
+      "answer": ["A"],
+      "explanation": "Fine-grained network controls limit east-west traffic attackers need to spread.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d2-059",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "A macros-enabled Office document that downloads a payload when opened is typical of:",
+      "choices": [
+        { "id": "A", "text": "Malicious document / dropper delivery" },
+        { "id": "B", "text": "Hardware token cloning only" },
+        { "id": "C", "text": "Faraday cage failure" },
+        { "id": "D", "text": "BGP anycast improvement" }
+      ],
+      "answer": ["A"],
+      "explanation": "Weaponized documents commonly deliver malware via macros or exploits.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d2-060",
+      "type": "mcq_multi",
+      "domain": 2,
+      "objective": "2.2",
+      "stem": "Which TWO are common wireless threats?",
+      "choices": [
+        { "id": "A", "text": "Evil twin access points" },
+        { "id": "B", "text": "Deauthentication floods" },
+        { "id": "C", "text": "Offline HSM air gaps" },
+        { "id": "D", "text": "Paper shredding policies" }
+      ],
+      "answer": ["A", "B"],
+      "explanation": "Fake APs and deauth attacks target Wi-Fi confidentiality and availability.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d2-061",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.5",
+      "stem": "Disabling SMBv1 on endpoints is primarily a mitigation against:",
+      "choices": [
+        { "id": "A", "text": "Legacy protocol exploits (e.g., wormable SMB flaws)" },
+        { "id": "B", "text": "HDMI EDID spoofing" },
+        { "id": "C", "text": "Printer paper jams" },
+        { "id": "D", "text": "GPS spoofing of phones only" }
+      ],
+      "answer": ["A"],
+      "explanation": "Old SMB versions carried serious remote vulnerabilities; disabling them reduces exposure.",
+      "difficulty": "medium"
+    }
+  ],
+  "pbq": []
+}

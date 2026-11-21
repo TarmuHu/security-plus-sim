@@ -1,0 +1,221 @@
+{
+  "mcq": [],
+  "pbq": [
+    {
+      "id": "pbq-fw-002",
+      "type": "pbq_firewall",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "Configure firewall rules for the database tier. Rules are evaluated top-down; first match wins.",
+      "scenario": "Allow PostgreSQL (5432/tcp) only from app subnet 10.20.0.0/24 to DB 10.30.0.10. Allow SSH only from bastion 10.0.0.5 to 10.30.0.10. Deny all other traffic to 10.30.0.10.",
+      "existingRules": [],
+      "answer": [
+        {
+          "action": "allow",
+          "protocol": "tcp",
+          "source": "10.20.0.0/24",
+          "destination": "10.30.0.10",
+          "port": "5432"
+        },
+        {
+          "action": "allow",
+          "protocol": "tcp",
+          "source": "10.0.0.5",
+          "destination": "10.30.0.10",
+          "port": "22"
+        },
+        {
+          "action": "deny",
+          "protocol": "any",
+          "source": "any",
+          "destination": "10.30.0.10",
+          "port": "any"
+        }
+      ],
+      "explanation": "Permit DB traffic from the app subnet and SSH from the bastion, then deny everything else to the host.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pbq-log-002",
+      "type": "pbq_log_triage",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "Select ALL hosts that show signs of compromise based on the logs.",
+      "scenario": "Review overnight SOC excerpts and choose compromised hosts.",
+      "logs": [
+        {
+          "id": "e1",
+          "timestamp": "02:11:03",
+          "host": "WS-DEV-02",
+          "message": "Successful VPN login for adev from known home IP"
+        },
+        {
+          "id": "e2",
+          "timestamp": "02:14:44",
+          "host": "WS-ACC-11",
+          "message": "rundll32.exe loading unsigned DLL from %TEMP%\\upd.dat"
+        },
+        {
+          "id": "e3",
+          "timestamp": "02:15:02",
+          "host": "SRV-FILE01",
+          "message": "Scheduled backup job completed successfully"
+        },
+        {
+          "id": "e4",
+          "timestamp": "02:16:18",
+          "host": "WS-ACC-11",
+          "message": "Outbound DNS queries for randomized subdomains of badsite[.]top every 60s"
+        },
+        {
+          "id": "e5",
+          "timestamp": "02:17:40",
+          "host": "WS-HR-09",
+          "message": "mimikatz.exe hash dump activity blocked by EDR (alert)"
+        },
+        {
+          "id": "e6",
+          "timestamp": "02:18:01",
+          "host": "PRT-LOBBY",
+          "message": "Paper tray empty"
+        }
+      ],
+      "answer": ["WS-ACC-11", "WS-HR-09"],
+      "explanation": "WS-ACC-11 shows suspicious loader and C2-like DNS; WS-HR-09 triggered credential dumping tooling. Others look benign.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pbq-seq-002",
+      "type": "pbq_sequence",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "Order the change-management steps for a standard production change.",
+      "scenario": "Arrange the steps from first to last for a mature change process.",
+      "steps": [
+        { "id": "s1", "text": "Submit change request with risk and rollback plan" },
+        { "id": "s2", "text": "Obtain CAB / approver authorization" },
+        { "id": "s3", "text": "Implement change in the approved window" },
+        { "id": "s4", "text": "Verify success and close with post-implementation review" }
+      ],
+      "answer": ["s1", "s2", "s3", "s4"],
+      "explanation": "Request and plan → approve → implement → verify/review.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pbq-topo-002",
+      "type": "pbq_topology",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "Place the BEST control in each Zero Trust / segmented design slot.",
+      "scenario": "Users → [Access] → Apps → [Data path] → Sensitive data store. Choose the BEST control for each slot.",
+      "slots": [
+        {
+          "id": "access",
+          "label": "User access decision point",
+          "options": [
+            "Identity provider + MFA + device posture",
+            "Open anonymous FTP",
+            "Shared local admin",
+            "Disable logging"
+          ],
+          "answer": "Identity provider + MFA + device posture"
+        },
+        {
+          "id": "path",
+          "label": "App to data path",
+          "options": [
+            "mTLS + least-privilege service identity",
+            "Cleartext Telnet",
+            "Flat hub with no ACLs",
+            "Public S3 ACL *:*"
+          ],
+          "answer": "mTLS + least-privilege service identity"
+        },
+        {
+          "id": "store",
+          "label": "Sensitive data store",
+          "options": [
+            "Encryption at rest + tight IAM + auditing",
+            "World-writable NFS export",
+            "Guest Wi-Fi bridge",
+            "Default vendor passwords"
+          ],
+          "answer": "Encryption at rest + tight IAM + auditing"
+        }
+      ],
+      "explanation": "Zero Trust needs strong identity at access, encrypted authenticated service paths, and hardened data stores.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pbq-match-003",
+      "type": "pbq_match",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "Match each attack to the BEST description.",
+      "scenario": "Drag the description to the matching attack name.",
+      "pairs": [
+        {
+          "leftId": "L1",
+          "left": "Spear phishing",
+          "rightId": "R1",
+          "right": "Targeted fraudulent email to a specific person/role"
+        },
+        {
+          "leftId": "L2",
+          "left": "Credential stuffing",
+          "rightId": "R2",
+          "right": "Replaying breached username/password pairs at scale"
+        },
+        {
+          "leftId": "L3",
+          "left": "Evil twin",
+          "rightId": "R3",
+          "right": "Rogue AP mimicking a trusted SSID"
+        },
+        {
+          "leftId": "L4",
+          "left": "Watering hole",
+          "rightId": "R4",
+          "right": "Compromising a site the target group frequents"
+        }
+      ],
+      "distractors": ["Warm boot only", "Toner skimming"],
+      "explanation": "Each term maps to a distinct delivery or credential/Wi-Fi abuse pattern.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pbq-fw-003",
+      "type": "pbq_firewall",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "Configure edge rules for a partner API. First match wins.",
+      "scenario": "Allow HTTPS from partner CIDR 198.51.100.0/24 to API VIP 203.0.113.10. Allow health checks ICMP from monitoring host 203.0.113.50 to the VIP. Deny all other inbound to the VIP.",
+      "existingRules": [],
+      "answer": [
+        {
+          "action": "allow",
+          "protocol": "tcp",
+          "source": "198.51.100.0/24",
+          "destination": "203.0.113.10",
+          "port": "443"
+        },
+        {
+          "action": "allow",
+          "protocol": "icmp",
+          "source": "203.0.113.50",
+          "destination": "203.0.113.10",
+          "port": "any"
+        },
+        {
+          "action": "deny",
+          "protocol": "any",
+          "source": "any",
+          "destination": "203.0.113.10",
+          "port": "any"
+        }
+      ],
+      "explanation": "Permit partner HTTPS and monitoring ICMP, then explicit deny for the VIP.",
+      "difficulty": "hard"
+    }
+  ]
+}

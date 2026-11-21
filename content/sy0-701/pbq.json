@@ -1,0 +1,503 @@
+[
+  {
+    "id": "pbq-match-001",
+    "type": "pbq_match",
+    "domain": 1,
+    "objective": "1.2",
+    "stem": "Match each security control to its BEST classification.",
+    "scenario": "Drag the control type to the matching example. Not all types may be used more than once.",
+    "pairs": [
+      {
+        "leftId": "L1",
+        "left": "Firewall ACL",
+        "rightId": "R1",
+        "right": "Technical preventive"
+      },
+      {
+        "leftId": "L2",
+        "left": "Security awareness training",
+        "rightId": "R2",
+        "right": "Managerial"
+      },
+      {
+        "leftId": "L3",
+        "left": "Security guard",
+        "rightId": "R3",
+        "right": "Physical detective/preventive"
+      },
+      {
+        "leftId": "L4",
+        "left": "SIEM alert review",
+        "rightId": "R4",
+        "right": "Operational detective"
+      }
+    ],
+    "distractors": [
+      "Compensating only",
+      "Directive only"
+    ],
+    "explanation": "Firewalls are technical preventive; training is managerial; guards are physical; SIEM review is operational detective.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pbq-fw-001",
+    "type": "pbq_firewall",
+    "domain": 4,
+    "objective": "4.1",
+    "stem": "Configure firewall rules to meet the scenario. Rules are evaluated top-down; first match wins.",
+    "scenario": "Allow HTTPS from the Internet to the DMZ web server 10.10.10.5. Allow SSH only from the jump host 10.0.0.8 to 10.10.10.5. Deny all other traffic to 10.10.10.5.",
+    "existingRules": [],
+    "answer": [
+      {
+        "action": "allow",
+        "protocol": "tcp",
+        "source": "any",
+        "destination": "10.10.10.5",
+        "port": "443"
+      },
+      {
+        "action": "allow",
+        "protocol": "tcp",
+        "source": "10.0.0.8",
+        "destination": "10.10.10.5",
+        "port": "22"
+      },
+      {
+        "action": "deny",
+        "protocol": "any",
+        "source": "any",
+        "destination": "10.10.10.5",
+        "port": "any"
+      }
+    ],
+    "explanation": "Permit 443 from anywhere, SSH only from the jump host, then explicit deny for the host.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pbq-log-001",
+    "type": "pbq_log_triage",
+    "domain": 4,
+    "objective": "4.3",
+    "stem": "Select ALL hosts that show signs of compromise based on the logs.",
+    "scenario": "SOC analysts received alerts about unusual activity. Review the excerpts and select compromised hosts.",
+    "logs": [
+      {
+        "id": "e1",
+        "timestamp": "09:01:12",
+        "host": "WS-HR-14",
+        "message": "Successful login for jsmith from 10.20.30.40 (normal)"
+      },
+      {
+        "id": "e2",
+        "timestamp": "09:02:44",
+        "host": "WS-FIN-03",
+        "message": "powershell.exe -enc JABzAG... spawned by winword.exe"
+      },
+      {
+        "id": "e3",
+        "timestamp": "09:03:01",
+        "host": "SRV-DC01",
+        "message": "Kerberos TGT issued for svc_backup (scheduled)"
+      },
+      {
+        "id": "e4",
+        "timestamp": "09:03:18",
+        "host": "WS-FIN-03",
+        "message": "Outbound connection to 185.22.99.12:443 (newly seen C2 reputation)"
+      },
+      {
+        "id": "e5",
+        "timestamp": "09:04:02",
+        "host": "WS-MKT-07",
+        "message": "LSess.exe downloaded unsigned binary from paste-site and executed"
+      },
+      {
+        "id": "e6",
+        "timestamp": "09:05:11",
+        "host": "PRT-FLOOR2",
+        "message": "Toner low"
+      }
+    ],
+    "answer": [
+      "WS-FIN-03",
+      "WS-MKT-07"
+    ],
+    "explanation": "WS-FIN-03 shows Office spawning encoded PowerShell plus C2; WS-MKT-07 executed an unsigned download. Others look benign.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pbq-seq-001",
+    "type": "pbq_sequence",
+    "domain": 4,
+    "objective": "4.5",
+    "stem": "Order the incident response lifecycle phases correctly.",
+    "scenario": "Arrange the phases from first to last for a mature IR program.",
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Preparation"
+      },
+      {
+        "id": "s2",
+        "text": "Detection and analysis"
+      },
+      {
+        "id": "s3",
+        "text": "Containment, eradication, and recovery"
+      },
+      {
+        "id": "s4",
+        "text": "Post-incident activity (lessons learned)"
+      }
+    ],
+    "answer": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "explanation": "NIST IR flow: prepare → detect/analyze → contain/eradicate/recover → lessons learned.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pbq-topo-001",
+    "type": "pbq_topology",
+    "domain": 3,
+    "objective": "3.2",
+    "stem": "Place the correct security control in each network location.",
+    "scenario": "Internet → [Edge] → DMZ web tier → [Internal] → App/DB tier. Choose the BEST control for each slot.",
+    "slots": [
+      {
+        "id": "edge",
+        "label": "Edge / Internet facing",
+        "options": [
+          "WAF + perimeter firewall",
+          "Offline HSM only",
+          "Badge printer",
+          "Toner sensor"
+        ],
+        "answer": "WAF + perimeter firewall"
+      },
+      {
+        "id": "dmz",
+        "label": "Between DMZ and internal",
+        "options": [
+          "Internal firewall / proxy",
+          "Open hub",
+          "Guest Wi-Fi AP",
+          "CRT monitor"
+        ],
+        "answer": "Internal firewall / proxy"
+      },
+      {
+        "id": "data",
+        "label": "Database tier protection",
+        "options": [
+          "Encryption at rest + strict ACLs",
+          "Public S3 ACL",
+          "Telnet management",
+          "Shared local admin"
+        ],
+        "answer": "Encryption at rest + strict ACLs"
+      }
+    ],
+    "explanation": "Edge needs WAF/firewall; DMZ-to-internal needs filtering; databases need encryption and tight ACLs.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pbq-match-002",
+    "type": "pbq_match",
+    "domain": 5,
+    "objective": "5.1",
+    "stem": "Match each risk treatment to the BEST example.",
+    "scenario": "Associate the treatment strategy with the scenario.",
+    "pairs": [
+      {
+        "leftId": "L1",
+        "left": "Purchase cyber insurance",
+        "rightId": "R1",
+        "right": "Transfer"
+      },
+      {
+        "leftId": "L2",
+        "left": "Implement MFA on VPN",
+        "rightId": "R2",
+        "right": "Mitigate"
+      },
+      {
+        "leftId": "L3",
+        "left": "Cancel a high-risk project",
+        "rightId": "R3",
+        "right": "Avoid"
+      },
+      {
+        "leftId": "L4",
+        "left": "Leadership approves residual risk",
+        "rightId": "R4",
+        "right": "Accept"
+      }
+    ],
+    "explanation": "Insurance transfers; MFA mitigates; canceling avoids; approved residual risk is acceptance.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pbq-fw-002",
+    "type": "pbq_firewall",
+    "domain": 4,
+    "objective": "4.1",
+    "stem": "Configure firewall rules to meet the scenario. Rules are evaluated top-down; first match wins.",
+    "scenario": "Allow DNS (UDP 53) from internal subnet 10.50.0.0/16 to the DNS resolver 10.50.1.10. Allow NTP (UDP 123) from 10.50.0.0/16 to 10.50.1.20. Deny all other UDP from 10.50.0.0/16 to those two hosts.",
+    "existingRules": [],
+    "answer": [
+      {
+        "action": "allow",
+        "protocol": "udp",
+        "source": "10.50.0.0/16",
+        "destination": "10.50.1.10",
+        "port": "53"
+      },
+      {
+        "action": "allow",
+        "protocol": "udp",
+        "source": "10.50.0.0/16",
+        "destination": "10.50.1.20",
+        "port": "123"
+      },
+      {
+        "action": "deny",
+        "protocol": "udp",
+        "source": "10.50.0.0/16",
+        "destination": "10.50.1.10",
+        "port": "any"
+      },
+      {
+        "action": "deny",
+        "protocol": "udp",
+        "source": "10.50.0.0/16",
+        "destination": "10.50.1.20",
+        "port": "any"
+      }
+    ],
+    "explanation": "Permit only DNS to the resolver and NTP to the time server from the internal range, then explicitly deny other UDP to those hosts so first-match evaluation enforces least privilege.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pbq-log-002",
+    "type": "pbq_log_triage",
+    "domain": 4,
+    "objective": "4.3",
+    "stem": "Select ALL hosts that show signs of compromise or malicious activity based on the logs.",
+    "scenario": "Overnight SIEM alerts flagged unusual authentication and process activity. Review the excerpts and select hosts that require investigation.",
+    "logs": [
+      {
+        "id": "e1",
+        "timestamp": "02:11:03",
+        "host": "WS-DEV-21",
+        "message": "Successful interactive login for adev from 10.1.4.22 (expected VPN)"
+      },
+      {
+        "id": "e2",
+        "timestamp": "02:14:41",
+        "host": "SRV-FILE02",
+        "message": "mimikatz.exe executed by local admin; LSASS memory access flagged"
+      },
+      {
+        "id": "e3",
+        "timestamp": "02:15:02",
+        "host": "SRV-FILE02",
+        "message": "New scheduled task \\Updater created running C:\\Users\\Public\\svc.bat"
+      },
+      {
+        "id": "e4",
+        "timestamp": "02:16:18",
+        "host": "WS-HR-02",
+        "message": "Screen lock engaged after idle timeout (policy)"
+      },
+      {
+        "id": "e5",
+        "timestamp": "02:17:55",
+        "host": "SRV-WEB01",
+        "message": "Outbound SSH to 203.0.113.88:22 from www-data; first-seen destination"
+      },
+      {
+        "id": "e6",
+        "timestamp": "02:18:30",
+        "host": "PRT-LOBBY",
+        "message": "Print job completed for user jlee"
+      }
+    ],
+    "answer": [
+      "SRV-FILE02",
+      "SRV-WEB01"
+    ],
+    "explanation": "SRV-FILE02 shows credential dumping and persistence via a suspicious scheduled task. SRV-WEB01 shows unexpected outbound SSH from the web service account to a newly seen host. The workstation login and printer events look benign.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "pbq-seq-002",
+    "type": "pbq_sequence",
+    "domain": 4,
+    "objective": "4.5",
+    "stem": "Order the forensic evidence handling steps correctly from first to last.",
+    "scenario": "A laptop suspected of compromise must be preserved for investigation. Arrange the steps in the proper order.",
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Isolate the system and document the scene / chain-of-custody start"
+      },
+      {
+        "id": "s2",
+        "text": "Capture volatile memory if powered on and justified"
+      },
+      {
+        "id": "s3",
+        "text": "Create a forensic disk image and verify hashes"
+      },
+      {
+        "id": "s4",
+        "text": "Analyze working copies and report findings"
+      }
+    ],
+    "answer": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ],
+    "explanation": "Preserve and document first, capture volatile data while available, image and hash for integrity, then analyze copies—not the original evidence.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pbq-topo-002",
+    "type": "pbq_topology",
+    "domain": 3,
+    "objective": "3.2",
+    "stem": "Place the BEST security control in each Zero Trust access path slot.",
+    "scenario": "Remote user → [Broker] → App → [Data]. Choose appropriate controls for a Zero Trust design.",
+    "slots": [
+      {
+        "id": "broker",
+        "label": "Access broker / edge",
+        "options": [
+          "ZTNA / identity-aware proxy with device posture checks",
+          "Open RDP to the Internet",
+          "Shared local admin password",
+          "Unfiltered SMB"
+        ],
+        "answer": "ZTNA / identity-aware proxy with device posture checks"
+      },
+      {
+        "id": "app",
+        "label": "Application tier",
+        "options": [
+          "Mutual TLS and least-privilege service accounts",
+          "Anonymous FTP",
+          "Hard-coded SQL sa password in the UI",
+          "Disabled authentication"
+        ],
+        "answer": "Mutual TLS and least-privilege service accounts"
+      },
+      {
+        "id": "data",
+        "label": "Data store",
+        "options": [
+          "Encryption at rest + column-level access controls",
+          "Public read ACL for all objects",
+          "Telnet management",
+          "No audit logging"
+        ],
+        "answer": "Encryption at rest + column-level access controls"
+      }
+    ],
+    "explanation": "Zero Trust uses an identity/posture-aware broker, strong app authentication, and tightly controlled encrypted data stores—not open remote protocols or public data ACLs.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pbq-match-003",
+    "type": "pbq_match",
+    "domain": 2,
+    "objective": "2.4",
+    "stem": "Match each attack technique to the BEST description.",
+    "scenario": "Associate the attack name with what it primarily does.",
+    "pairs": [
+      {
+        "leftId": "L1",
+        "left": "Password spraying",
+        "rightId": "R1",
+        "right": "Few common passwords tried across many accounts"
+      },
+      {
+        "leftId": "L2",
+        "left": "Credential stuffing",
+        "rightId": "R2",
+        "right": "Reuse of leaked username/password pairs on other sites"
+      },
+      {
+        "leftId": "L3",
+        "left": "Pass-the-hash",
+        "rightId": "R3",
+        "right": "Authenticate using captured NTLM hashes without cracking"
+      },
+      {
+        "leftId": "L4",
+        "left": "Business Email Compromise",
+        "rightId": "R4",
+        "right": "Fraudulent payment or gift-card requests via email impersonation"
+      }
+    ],
+    "distractors": [
+      "Flooding a target with ICMP only",
+      "Physical theft of a badge printer"
+    ],
+    "explanation": "Spraying avoids lockouts with common passwords; stuffing replays breach dumps; PtH reuses hashes; BEC social-engineers finance workflows.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "pbq-fw-003",
+    "type": "pbq_firewall",
+    "domain": 3,
+    "objective": "3.2",
+    "stem": "Configure firewall rules for a three-tier app. Rules are evaluated top-down; first match wins.",
+    "scenario": "Allow TCP 443 from any Internet client to DMZ load balancer 172.16.10.5. Allow TCP 8080 only from 172.16.10.5 to app server 10.20.20.10. Allow TCP 5432 only from 10.20.20.10 to DB 10.20.30.10. Deny all other traffic to 10.20.20.10 and 10.20.30.10.",
+    "existingRules": [],
+    "answer": [
+      {
+        "action": "allow",
+        "protocol": "tcp",
+        "source": "any",
+        "destination": "172.16.10.5",
+        "port": "443"
+      },
+      {
+        "action": "allow",
+        "protocol": "tcp",
+        "source": "172.16.10.5",
+        "destination": "10.20.20.10",
+        "port": "8080"
+      },
+      {
+        "action": "allow",
+        "protocol": "tcp",
+        "source": "10.20.20.10",
+        "destination": "10.20.30.10",
+        "port": "5432"
+      },
+      {
+        "action": "deny",
+        "protocol": "any",
+        "source": "any",
+        "destination": "10.20.20.10",
+        "port": "any"
+      },
+      {
+        "action": "deny",
+        "protocol": "any",
+        "source": "any",
+        "destination": "10.20.30.10",
+        "port": "any"
+      }
+    ],
+    "explanation": "Internet reaches only the LB on 443; the LB alone talks to the app on 8080; only the app reaches the DB on 5432; explicit denies protect the internal tiers from other sources.",
+    "difficulty": "hard"
+  }
+]

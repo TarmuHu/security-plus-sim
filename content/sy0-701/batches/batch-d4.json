@@ -1,0 +1,453 @@
+{
+  "mcq": [
+    {
+      "id": "d4-041",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "Which secure protocol is the modern replacement for unencrypted HTTP on the web?",
+      "choices": [
+        { "id": "A", "text": "HTTPS (HTTP over TLS)" },
+        { "id": "B", "text": "Telnet" },
+        { "id": "C", "text": "FTP without TLS" },
+        { "id": "D", "text": "SNMPv1" }
+      ],
+      "answer": ["A"],
+      "explanation": "HTTPS encrypts web traffic using TLS.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d4-042",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "Which port does SSH commonly use by default?",
+      "choices": [
+        { "id": "A", "text": "22/tcp" },
+        { "id": "B", "text": "23/tcp" },
+        { "id": "C", "text": "80/tcp" },
+        { "id": "D", "text": "161/udp" }
+      ],
+      "answer": ["A"],
+      "explanation": "SSH listens on TCP 22 by default; Telnet uses 23.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d4-043",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "LDAPS typically secures directory queries using TLS on which common port?",
+      "choices": [
+        { "id": "A", "text": "636/tcp" },
+        { "id": "B", "text": "389/tcp without encryption only" },
+        { "id": "C", "text": "25/tcp" },
+        { "id": "D", "text": "69/udp" }
+      ],
+      "answer": ["A"],
+      "explanation": "LDAPS commonly uses TCP 636 with TLS.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-044",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "EDR agents on endpoints primarily provide:",
+      "choices": [
+        { "id": "A", "text": "Detection, investigation, and response on hosts" },
+        { "id": "B", "text": "Only WAN acceleration" },
+        { "id": "C", "text": "Only badge printing" },
+        { "id": "D", "text": "Only DNS recursion" }
+      ],
+      "answer": ["A"],
+      "explanation": "Endpoint detection and response tools monitor and help contain host threats.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d4-045",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "Normalized log timestamps across systems MOST require:",
+      "choices": [
+        { "id": "A", "text": "Reliable time sync (e.g., NTP) and consistent time zones/UTC policy" },
+        { "id": "B", "text": "Larger monitor bezels" },
+        { "id": "C", "text": "Disabling audit policies" },
+        { "id": "D", "text": "Shared local admin passwords" }
+      ],
+      "answer": ["A"],
+      "explanation": "Correlating events fails when clocks drift or time zones are inconsistent.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-046",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.4",
+      "stem": "Vulnerability scans that authenticate to targets generally produce:",
+      "choices": [
+        { "id": "A", "text": "More accurate findings with fewer false negatives on missing patches" },
+        { "id": "B", "text": "No useful data" },
+        { "id": "C", "text": "Only physical security scores" },
+        { "id": "D", "text": "Guaranteed zero vulnerabilities" }
+      ],
+      "answer": ["A"],
+      "explanation": "Credentialed scans can inspect installed software and configs more deeply.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-047",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.4",
+      "stem": "A CVSS score helps organizations:",
+      "choices": [
+        { "id": "A", "text": "Prioritize remediation based on severity" },
+        { "id": "B", "text": "Encrypt backups automatically" },
+        { "id": "C", "text": "Issue badges" },
+        { "id": "D", "text": "Tune HVAC" }
+      ],
+      "answer": ["A"],
+      "explanation": "CVSS provides a standardized severity rating to guide patch priority.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d4-048",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "During incident response, containment should occur:",
+      "choices": [
+        { "id": "A", "text": "After detection/analysis enough to act, before full eradication completes" },
+        { "id": "B", "text": "Only after deleting all logs" },
+        { "id": "C", "text": "Before any evidence preservation ever" },
+        { "id": "D", "text": "Never — only wait for attackers to leave" }
+      ],
+      "answer": ["A"],
+      "explanation": "Containment limits damage while analysis continues and eradication is prepared.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d4-049",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "Preserving volatile memory captures is MOST important when investigating:",
+      "choices": [
+        { "id": "A", "text": "Fileless malware or in-memory implants" },
+        { "id": "B", "text": "Empty toner cartridges" },
+        { "id": "C", "text": "Cable label colors" },
+        { "id": "D", "text": "Desk chair height" }
+      ],
+      "answer": ["A"],
+      "explanation": "RAM captures can reveal malware that never touches disk.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d4-050",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.6",
+      "stem": "Which backup strategy keeps a recent copy offline and unreachable to ransomware?",
+      "choices": [
+        { "id": "A", "text": "Immutable or air-gapped backups" },
+        { "id": "B", "text": "Only sync folders mapped as writable network drives" },
+        { "id": "C", "text": "Screenshots of files" },
+        { "id": "D", "text": "Emailing zips to self without retention" }
+      ],
+      "answer": ["A"],
+      "explanation": "Offline/immutable copies survive encryptors that target connected shares.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-051",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.6",
+      "stem": "RTO measures:",
+      "choices": [
+        { "id": "A", "text": "How quickly a service must be restored after disruption" },
+        { "id": "B", "text": "How much data loss is acceptable in time" },
+        { "id": "C", "text": "Only CPU temperature" },
+        { "id": "D", "text": "Only badge ink levels" }
+      ],
+      "answer": ["A"],
+      "explanation": "Recovery Time Objective is the target downtime limit; RPO covers data loss tolerance.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-052",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.6",
+      "stem": "RPO measures:",
+      "choices": [
+        { "id": "A", "text": "Maximum tolerable data loss measured in time" },
+        { "id": "B", "text": "Maximum acceptable outage duration only" },
+        { "id": "C", "text": "Firewall rule count" },
+        { "id": "D", "text": "Number of cameras" }
+      ],
+      "answer": ["A"],
+      "explanation": "Recovery Point Objective defines how much data you can afford to lose.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-053",
+      "type": "mcq_multi",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "Which TWO protocols should be preferred over their cleartext predecessors?",
+      "choices": [
+        { "id": "A", "text": "SFTP or FTPS instead of FTP" },
+        { "id": "B", "text": "SNMPv3 instead of SNMPv1/v2c community strings" },
+        { "id": "C", "text": "Telnet instead of SSH" },
+        { "id": "D", "text": "HTTP instead of HTTPS" }
+      ],
+      "answer": ["A", "B"],
+      "explanation": "Encrypted/authenticated variants replace insecure legacy management and file protocols.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d4-054",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "A SOAR platform primarily helps by:",
+      "choices": [
+        { "id": "A", "text": "Automating playbooks that enrich alerts and execute response steps" },
+        { "id": "B", "text": "Printing badges faster" },
+        { "id": "C", "text": "Cooling the data center" },
+        { "id": "D", "text": "Replacing all firewalls" }
+      ],
+      "answer": ["A"],
+      "explanation": "Security orchestration automates repetitive IR workflows.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-055",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "NetFlow/IPFIX data is MOST useful for:",
+      "choices": [
+        { "id": "A", "text": "Understanding traffic patterns and spotting anomalies" },
+        { "id": "B", "text": "Encrypting disks" },
+        { "id": "C", "text": "Physical escort logging only" },
+        { "id": "D", "text": "Toner accounting" }
+      ],
+      "answer": ["A"],
+      "explanation": "Flow records summarize conversations without full packet payloads.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-056",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.4",
+      "stem": "A penetration test differs from a vulnerability scan because it:",
+      "choices": [
+        { "id": "A", "text": "Actively exploits findings to prove impact under rules of engagement" },
+        { "id": "B", "text": "Only lists CVEs without context ever" },
+        { "id": "C", "text": "Never requires authorization" },
+        { "id": "D", "text": "Only checks toner" }
+      ],
+      "answer": ["A"],
+      "explanation": "Pen tests attempt exploitation; scans mainly identify potential issues.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-057",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "After eradication, which step validates systems are clean before full restore of trust?",
+      "choices": [
+        { "id": "A", "text": "Recovery with monitoring and verification" },
+        { "id": "B", "text": "Deleting SIEM forever" },
+        { "id": "C", "text": "Disabling MFA" },
+        { "id": "D", "text": "Publishing passwords" }
+      ],
+      "answer": ["A"],
+      "explanation": "Recovery returns services carefully while watching for reinfection.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-058",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.8",
+      "stem": "Tabletop exercises primarily improve:",
+      "choices": [
+        { "id": "A", "text": "Decision-making and communication during simulated incidents" },
+        { "id": "B", "text": "Cable tensile strength" },
+        { "id": "C", "text": "Monitor DPI" },
+        { "id": "D", "text": "Keyboard switch feel" }
+      ],
+      "answer": ["A"],
+      "explanation": "Tabletops walk teams through scenarios without live system changes.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d4-059",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "DNS over HTTPS (DoH) primarily improves:",
+      "choices": [
+        { "id": "A", "text": "Confidentiality of DNS queries on the local network path" },
+        { "id": "B", "text": "Physical lock strength" },
+        { "id": "C", "text": "Battery chemistry" },
+        { "id": "D", "text": "Printer duplexing" }
+      ],
+      "answer": ["A"],
+      "explanation": "DoH encrypts DNS lookups so on-path observers cannot easily read them.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d4-060",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "Allowlisting (application control) is MOST effective against:",
+      "choices": [
+        { "id": "A", "text": "Unknown/unauthorized executables including many ransomware strains" },
+        { "id": "B", "text": "Authorized signed LOB apps only failing" },
+        { "id": "C", "text": "UPS battery aging" },
+        { "id": "D", "text": "Badge artwork" }
+      ],
+      "answer": ["A"],
+      "explanation": "Only approved binaries run, blocking many novel malware files.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-061",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "A honeypot’s MAIN purpose is to:",
+      "choices": [
+        { "id": "A", "text": "Attract and study attackers while diverting them from real assets" },
+        { "id": "B", "text": "Store production customer PII" },
+        { "id": "C", "text": "Replace backups" },
+        { "id": "D", "text": "Host payroll" }
+      ],
+      "answer": ["A"],
+      "explanation": "Decoy systems reveal attacker TTPs with lower production risk.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d4-062",
+      "type": "mcq_multi",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "Which TWO actions support forensic readiness?",
+      "choices": [
+        { "id": "A", "text": "Centralized immutable logging" },
+        { "id": "B", "text": "Documented evidence handling procedures" },
+        { "id": "C", "text": "Randomly deleting audit trails" },
+        { "id": "D", "text": "Shared interactive root over Telnet" }
+      ],
+      "answer": ["A", "B"],
+      "explanation": "Reliable logs and chain-of-custody processes enable investigations.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d4-063",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.4",
+      "stem": "Bug bounty programs incentivize:",
+      "choices": [
+        { "id": "A", "text": "External researchers to report vulnerabilities responsibly" },
+        { "id": "B", "text": "Employees to disable MFA" },
+        { "id": "C", "text": "Vendors to ship default passwords" },
+        { "id": "D", "text": "Deletion of SIEMs" }
+      ],
+      "answer": ["A"],
+      "explanation": "Rewards channel disclosure to the vendor instead of silent exploitation.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d4-064",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "IPsec ESP primarily provides:",
+      "choices": [
+        { "id": "A", "text": "Confidentiality (and optionally integrity) for IP packets" },
+        { "id": "B", "text": "Only physical camera IR" },
+        { "id": "C", "text": "Only DHCP options" },
+        { "id": "D", "text": "Only SMTP greylisting" }
+      ],
+      "answer": ["A"],
+      "explanation": "ESP encrypts packet payloads for VPN/secure IP communication.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-065",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.6",
+      "stem": "A hot site differs from a cold site mainly by:",
+      "choices": [
+        { "id": "A", "text": "Being nearly ready to run with systems and data near-current" },
+        { "id": "B", "text": "Having no power or connectivity ever" },
+        { "id": "C", "text": "Being only a empty warehouse without plans" },
+        { "id": "D", "text": "Never being tested" }
+      ],
+      "answer": ["A"],
+      "explanation": "Hot sites minimize RTO with live or standby capacity; cold sites need build-out.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-066",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "Host-based firewalls complement network firewalls by:",
+      "choices": [
+        { "id": "A", "text": "Enforcing per-endpoint rules even on internal or roaming hosts" },
+        { "id": "B", "text": "Replacing all physical locks" },
+        { "id": "C", "text": "Cooling GPUs" },
+        { "id": "D", "text": "Printing badges" }
+      ],
+      "answer": ["A"],
+      "explanation": "Local firewalls protect devices beyond perimeter choke points.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-067",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "UEBA analytics look for:",
+      "choices": [
+        { "id": "A", "text": "Behavioral anomalies relative to users’ and entities’ baselines" },
+        { "id": "B", "text": "Only toner density" },
+        { "id": "C", "text": "Only desk occupancy" },
+        { "id": "D", "text": "Only cable lengths" }
+      ],
+      "answer": ["A"],
+      "explanation": "User and entity behavior analytics flag unusual access patterns.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-068",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "Lessons-learned meetings after an incident should FIRST focus on:",
+      "choices": [
+        { "id": "A", "text": "Process and control improvements without blame-only narratives" },
+        { "id": "B", "text": "Punishing the SIEM vendor exclusively" },
+        { "id": "C", "text": "Deleting tickets" },
+        { "id": "D", "text": "Ignoring root causes" }
+      ],
+      "answer": ["A"],
+      "explanation": "Post-incident reviews drive measurable improvements for next time.",
+      "difficulty": "hard"
+    }
+  ],
+  "pbq": []
+}

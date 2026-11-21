@@ -1,0 +1,464 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #e8ecf1;
+  --panel: #f7f8fa;
+  --ink: #1a1a1a;
+  --muted: #555;
+  --line: #9aa3ad;
+  --accent: #003399;
+  --accent-hover: #002266;
+  --flag: #c45c00;
+  --ok: #166534;
+  --bad: #991b1b;
+  --chrome: #d4d0c8;
+  --chrome-dark: #808080;
+  --chrome-face: #ece9d8;
+  --content-bg: #ffffff;
+  --nav-bg: #c0c0c0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  color: var(--ink);
+  background: var(--bg);
+  font-family: Tahoma, "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+a {
+  color: var(--accent);
+}
+
+/* —— Lobby (practice product shell) —— */
+.lobby-shell {
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: "IBM Plex Sans", Tahoma, sans-serif;
+}
+
+/* —— Exam delivery chrome (Pearson / proctor vibe) —— */
+.vue-exam {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #bdbdbd;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #000;
+  user-select: none;
+}
+
+.vue-exam .vue-content,
+.vue-exam .vue-content * {
+  user-select: text;
+}
+
+.vue-info {
+  background: linear-gradient(180deg, #f5f5f5 0%, #dcdcdc 100%);
+  border-bottom: 2px solid #808080;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  min-height: 48px;
+}
+
+.vue-info-title {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.vue-info-meta {
+  font-size: 12px;
+  color: #333;
+}
+
+.vue-progress {
+  flex: 1;
+  min-width: 120px;
+  max-width: 280px;
+  height: 14px;
+  background: #fff;
+  border: 1px solid #666;
+  position: relative;
+}
+
+.vue-progress > span {
+  display: block;
+  height: 100%;
+  background: #4a7ab0;
+}
+
+.vue-timer {
+  font-family: "Courier New", Consolas, monospace;
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.vue-timer.urgent {
+  color: #b00000;
+}
+
+.vue-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #a8a8a8;
+  padding: 8px;
+  position: relative;
+}
+
+.vue-content {
+  flex: 1;
+  background: var(--content-bg);
+  border: 2px solid #404040;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  overflow: auto;
+  padding: 16px 20px 24px;
+  min-height: 360px;
+  position: relative;
+}
+
+.vue-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.vue-flag-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.vue-nav {
+  background: linear-gradient(180deg, #dfdfdf 0%, #b8b8b8 100%);
+  border-top: 2px solid #fff;
+  padding: 8px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.vue-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 88px;
+  padding: 5px 14px;
+  font-size: 13px;
+  color: #000;
+  background: linear-gradient(180deg, #f8f8f8 0%, #d4d4d4 55%, #c8c8c8 100%);
+  border: 1px solid #404040;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-radius: 0;
+  box-shadow: inset -1px -1px 0 #808080;
+  cursor: pointer;
+}
+
+.vue-btn:hover:not(:disabled) {
+  background: linear-gradient(180deg, #fff 0%, #e0e0e0 100%);
+}
+
+.vue-btn:active:not(:disabled) {
+  border-color: #808080;
+  border-bottom-color: #fff;
+  border-right-color: #fff;
+  box-shadow: inset 1px 1px 2px #808080;
+}
+
+.vue-btn:disabled {
+  color: #888;
+  cursor: default;
+}
+
+.vue-btn-primary {
+  font-weight: 700;
+  background: linear-gradient(180deg, #e8f0ff 0%, #9eb6d9 55%, #7a9ac4 100%);
+}
+
+.vue-btn-danger {
+  font-weight: 700;
+  background: linear-gradient(180deg, #ffe8e8 0%, #d99e9e 55%, #c47a7a 100%);
+}
+
+.vue-btn-flag[data-on="true"] {
+  background: linear-gradient(180deg, #fff3e0 0%, #e0b070 100%);
+  font-weight: 700;
+}
+
+/* Classic MCQ look */
+.vue-stem {
+  font-size: 15px;
+  line-height: 1.45;
+  margin: 0 0 16px;
+  white-space: pre-wrap;
+}
+
+.vue-choice {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+  padding: 8px 4px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-bottom: 1px dotted #ddd;
+}
+
+.vue-choice:hover {
+  background: #f3f7fb;
+}
+
+.vue-choice[data-selected="true"] {
+  background: #e8f0f8;
+}
+
+.vue-choice input {
+  margin-top: 3px;
+}
+
+/* Scenario floating window */
+.vue-window {
+  position: absolute;
+  z-index: 40;
+  width: min(420px, 92vw);
+  background: #ece9d8;
+  border: 2px solid #404040;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.vue-window-title {
+  background: linear-gradient(90deg, #0a246a 0%, #a6caf0 100%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+  user-select: none;
+}
+
+.vue-window-body {
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.4;
+  max-height: 280px;
+  overflow: auto;
+  background: #fff;
+  border-top: 1px solid #808080;
+  user-select: text;
+}
+
+.vue-window-x {
+  background: #c0c0c0;
+  border: 1px solid #404040;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  width: 18px;
+  height: 16px;
+  font-size: 11px;
+  line-height: 12px;
+  cursor: pointer;
+  color: #000;
+  padding: 0;
+}
+
+/* Item review */
+.vue-review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: 6px;
+}
+
+.vue-review-cell {
+  height: 36px;
+  font-size: 13px;
+  border: 1px solid #666;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.vue-review-cell[data-incomplete="true"] {
+  background: #fff;
+}
+
+.vue-review-cell[data-answered="true"] {
+  background: #e8f5e9;
+}
+
+.vue-review-cell[data-flagged="true"] {
+  background: #fff3e0;
+  font-weight: 700;
+}
+
+.vue-review-cell[data-current="true"] {
+  outline: 2px solid #003399;
+}
+
+.vue-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 60;
+  padding: 16px;
+}
+
+.vue-modal {
+  background: #ece9d8;
+  border: 2px solid #404040;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  width: min(480px, 100%);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.vue-modal-title {
+  background: linear-gradient(90deg, #0a246a 0%, #a6caf0 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+.vue-modal-body {
+  padding: 14px;
+  background: #fff;
+  font-size: 13px;
+}
+
+.vue-modal-actions {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  background: #ece9d8;
+  border-top: 1px solid #808080;
+}
+
+/* Legacy helpers still used on lobby/report */
+.exam-shell {
+  min-height: 100vh;
+  background: #bdbdbd;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.45rem 0.9rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f0f3f7;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+}
+
+.btn-danger {
+  background: #7f1d1d;
+  border-color: #7f1d1d;
+  color: #fff;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Secondary text link next to a primary CTA (e.g. View in memory list) */
+.link-quiet {
+  color: #6b5c4c;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: #c4b5a0;
+  text-underline-offset: 2px;
+}
+
+.link-quiet:hover {
+  color: #78350f;
+  text-decoration-color: #78350f;
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+}
+
+.choice {
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+}
+
+.choice[data-selected="true"] {
+  border-color: var(--accent);
+  background: #e8f0f8;
+}
+
+.choice input {
+  margin-top: 0.2rem;
+}

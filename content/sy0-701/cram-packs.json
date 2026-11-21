@@ -1,0 +1,1203 @@
+{
+  "generatedFrom": "SY0-701 official exam objectives domain weights + public high-yield study consensus (2024–2025). Explicitly excludes NDA-protected live items / braindumps.",
+  "disclaimer": "These mid-review packs estimate “most likely to matter” topics using public blueprint weights and common prep patterns. They are not reconstructed CompTIA exam questions and are not affiliated with CompTIA.",
+  "cards": [
+    {
+      "id": "c4-ir-order",
+      "frequency": 98,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.8",
+      "title": "IR lifecycle order",
+      "secret": "Preparation → Detection/Analysis → Containment/Eradication/Recovery → Lessons learned. Never skip contain before eradicate on live threats.",
+      "trap": "Jumping straight to eradication or “lessons learned first.”",
+      "recall": "P-D-C-L",
+      "tags": [
+        "IR",
+        "ops"
+      ]
+    },
+    {
+      "id": "c4-contain-first",
+      "frequency": 96,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.8",
+      "title": "Contain before eradicate",
+      "secret": "If malware is spreading, isolate/contain first. Eradicate after blast radius is limited.",
+      "trap": "Reimaging every host before isolation (spreads further / loses evidence).",
+      "recall": "Stop bleed → then cure",
+      "tags": [
+        "IR"
+      ]
+    },
+    {
+      "id": "c4-chain-custody",
+      "frequency": 90,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.8",
+      "title": "Chain of custody",
+      "secret": "Document who handled evidence, when, and how. Required for legal/forensic integrity.",
+      "trap": "Copying evidence casually without logs “to save time.”",
+      "recall": "Who/when/how on every handoff",
+      "tags": [
+        "forensics"
+      ]
+    },
+    {
+      "id": "c4-mfa",
+      "frequency": 97,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.6",
+      "title": "MFA beats passwords alone",
+      "secret": "Phishing-resistant MFA (FIDO2/WebAuthn) > SMS OTP > password-only. Scenario asking best identity control → MFA/PAM.",
+      "trap": "Longer passwords alone as the “best” fix for remote compromise risk.",
+      "recall": "Something you have + are",
+      "tags": [
+        "IAM"
+      ]
+    },
+    {
+      "id": "c4-least-priv",
+      "frequency": 95,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.6",
+      "title": "Least privilege / JIT",
+      "secret": "Standing Domain Admin is almost never the answer. Prefer JIT elevation + PAM vault + just-enough rights.",
+      "trap": "Shared local admin “for convenience.”",
+      "recall": "Elevate only when needed",
+      "tags": [
+        "IAM",
+        "PAM"
+      ]
+    },
+    {
+      "id": "c4-siem",
+      "frequency": 93,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.4",
+      "title": "SIEM job",
+      "secret": "Centralize logs → correlate → alert. SIEM ≠ EDR ≠ SOAR (SOAR automates response playbooks).",
+      "trap": "Saying SIEM replaces endpoint detection.",
+      "recall": "Aggregate + correlate",
+      "tags": [
+        "monitoring"
+      ]
+    },
+    {
+      "id": "c4-edr",
+      "frequency": 92,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.4",
+      "title": "EDR vs antivirus",
+      "secret": "EDR = detect/investigate/respond on endpoints with behavioral telemetry; AV alone is signature-limited.",
+      "trap": "“AV is enough for modern APT.”",
+      "recall": "Behavior + response",
+      "tags": [
+        "endpoint"
+      ]
+    },
+    {
+      "id": "c4-vuln-cred",
+      "frequency": 91,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.3",
+      "title": "Credentialed scans",
+      "secret": "Authenticated scans find missing patches more accurately than unauthenticated.",
+      "trap": "Assuming external port scan equals full vuln coverage.",
+      "recall": "Login = deeper truth",
+      "tags": [
+        "vuln"
+      ]
+    },
+    {
+      "id": "c4-harden",
+      "frequency": 94,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.1",
+      "title": "Attack surface reduction",
+      "secret": "Disable unused services, close ports, secure baselines/gold images, host firewalls.",
+      "trap": "Only adding more tools without removing exposure.",
+      "recall": "Less running = less attackable",
+      "tags": [
+        "hardening"
+      ]
+    },
+    {
+      "id": "c4-fde",
+      "frequency": 88,
+      "hit": "high",
+      "domain": 4,
+      "objective": "4.1",
+      "title": "Full disk encryption",
+      "secret": "Protects data-at-rest if laptop is lost/stolen while locked/off. Not a fix for phishing.",
+      "trap": "Using FDE as answer for in-transit eavesdropping.",
+      "recall": "Stolen drive → ciphertext",
+      "tags": [
+        "crypto",
+        "endpoint"
+      ]
+    },
+    {
+      "id": "c4-cond-access",
+      "frequency": 89,
+      "hit": "high",
+      "domain": 4,
+      "objective": "4.6",
+      "title": "Conditional access",
+      "secret": "Require MFA/compliant device based on risk, location, app. Context-aware identity control.",
+      "trap": "Static allow-all from “trusted network” (breaks zero trust).",
+      "recall": "If risk high → step up",
+      "tags": [
+        "IAM",
+        "zerotrust"
+      ]
+    },
+    {
+      "id": "c4-playbook",
+      "frequency": 87,
+      "hit": "high",
+      "domain": 4,
+      "objective": "4.8",
+      "title": "Playbooks / SOAR",
+      "secret": "Playbook = predefined IR steps; SOAR executes/orchestrates them with integrations.",
+      "trap": "Confusing playbook with BIA or risk register.",
+      "recall": "Repeatable response recipe",
+      "tags": [
+        "SOAR",
+        "IR"
+      ]
+    },
+    {
+      "id": "c4-ioc",
+      "frequency": 86,
+      "hit": "high",
+      "domain": 4,
+      "objective": "4.9",
+      "title": "IoC vs IoA",
+      "secret": "IoC = forensic artifact of compromise (hash, IP). Hunting often looks for behaviors (IoA) too.",
+      "trap": "Treating every IoC as proof without context.",
+      "recall": "Clue ≠ full story",
+      "tags": [
+        "hunting"
+      ]
+    },
+    {
+      "id": "c4-tabletop",
+      "frequency": 82,
+      "hit": "high",
+      "domain": 4,
+      "objective": "4.8",
+      "title": "Tabletop vs walkthrough",
+      "secret": "Tabletop = discussion/decision drill. Functional/full-interrupt tests exercise live systems.",
+      "trap": "Calling a live failover a tabletop.",
+      "recall": "Talk-through ≠ fail-over",
+      "tags": [
+        "IR",
+        "BCP"
+      ]
+    },
+    {
+      "id": "c2-phish-types",
+      "frequency": 96,
+      "hit": "critical",
+      "domain": 2,
+      "objective": "2.2",
+      "title": "Phishing family",
+      "secret": "Phishing=broad email; spear=targeted; whaling=exec; vishing=voice; smishing=SMS; BEC=fraudulent wire via email.",
+      "trap": "Calling every email scam “whaling.”",
+      "recall": "Whale = big fish exec",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "c2-ransomware",
+      "frequency": 95,
+      "hit": "critical",
+      "domain": 2,
+      "objective": "2.4",
+      "title": "Ransomware impact",
+      "secret": "Hits integrity + availability. Best mitigations: immutable/offline backups + segmentation + least privilege.",
+      "trap": "Paying ransom as the security control.",
+      "recall": "Backups beat Bitcoin",
+      "tags": [
+        "malware"
+      ]
+    },
+    {
+      "id": "c2-sqli",
+      "frequency": 93,
+      "hit": "critical",
+      "domain": 2,
+      "objective": "2.3",
+      "title": "Injection / SQLi",
+      "secret": "Unvalidated input → SQLi/XSS. Fix: parameterized queries/ORM + input validation + WAF as layer.",
+      "trap": "Only “strong passwords” for SQLi.",
+      "recall": "Never trust input",
+      "tags": [
+        "appsec"
+      ]
+    },
+    {
+      "id": "c2-xss",
+      "frequency": 90,
+      "hit": "critical",
+      "domain": 2,
+      "objective": "2.4",
+      "title": "XSS",
+      "secret": "Injects script into victim browser/session. Output encoding + CSP. Different from CSRF.",
+      "trap": "Calling XSS a server-side SQL problem.",
+      "recall": "Script in the page",
+      "tags": [
+        "appsec"
+      ]
+    },
+    {
+      "id": "c2-pth",
+      "frequency": 91,
+      "hit": "critical",
+      "domain": 2,
+      "objective": "2.4",
+      "title": "Pass-the-hash",
+      "secret": "Reuse NTLM hash to authenticate without cracking. Mitigate: Credential Guard, LAPS, restrict admin logons, PAM.",
+      "trap": "Thinking PtH needs cleartext password.",
+      "recall": "Hash travels as ticket",
+      "tags": [
+        "windows",
+        "identity"
+      ]
+    },
+    {
+      "id": "c2-ddos",
+      "frequency": 88,
+      "hit": "high",
+      "domain": 2,
+      "objective": "2.4",
+      "title": "DoS / DDoS",
+      "secret": "Availability attack. Mitigate with scrubbing/CDN/rate limits — not antivirus.",
+      "trap": "Answering with disk encryption.",
+      "recall": "Flood = availability",
+      "tags": [
+        "network"
+      ]
+    },
+    {
+      "id": "c2-actor",
+      "frequency": 92,
+      "hit": "critical",
+      "domain": 2,
+      "objective": "2.1",
+      "title": "Threat actors",
+      "secret": "Nation-state=espionage/persistence; hacktivist=ideology; insider=privilege abuse; script kiddie=kits; shadow IT=unsanctioned tools.",
+      "trap": "Assigning nation-state to every ransomware.",
+      "recall": "Match motive → actor",
+      "tags": [
+        "actors"
+      ]
+    },
+    {
+      "id": "c2-supply",
+      "frequency": 89,
+      "hit": "high",
+      "domain": 2,
+      "objective": "2.2",
+      "title": "Supply chain / watering hole",
+      "secret": "Compromise vendor/update or sites victims visit. Mitigate: vendor risk, code signing, allowlisting.",
+      "trap": "Only blaming end-user passwords.",
+      "recall": "Trust the pipeline?",
+      "tags": [
+        "supply"
+      ]
+    },
+    {
+      "id": "c2-eol",
+      "frequency": 85,
+      "hit": "high",
+      "domain": 2,
+      "objective": "2.3",
+      "title": "EOL / unpatched",
+      "secret": "No more vendor patches = critical risk. Isolate, upgrade, or compensate.",
+      "trap": "“Scan weekly” without remediation plan.",
+      "recall": "No patches = ticking bomb",
+      "tags": [
+        "vuln"
+      ]
+    },
+    {
+      "id": "c2-allowlist",
+      "frequency": 87,
+      "hit": "high",
+      "domain": 2,
+      "objective": "2.5",
+      "title": "Allowlisting",
+      "secret": "Best against unknown ransomware executables when paired with least privilege.",
+      "trap": "Relying only on denylist AV signatures.",
+      "recall": "Only known-good runs",
+      "tags": [
+        "mitigation"
+      ]
+    },
+    {
+      "id": "c2-arp",
+      "frequency": 80,
+      "hit": "medium",
+      "domain": 2,
+      "objective": "2.4",
+      "title": "ARP spoof / on-path",
+      "secret": "L2 MITM on local segment. Mitigate: dynamic ARP inspection, 802.1X, encryption.",
+      "trap": "Confusing with DNS poisoning exclusively.",
+      "recall": "Fake MAC for gateway",
+      "tags": [
+        "network"
+      ]
+    },
+    {
+      "id": "c5-risk-treat",
+      "frequency": 97,
+      "hit": "critical",
+      "domain": 5,
+      "objective": "5.2",
+      "title": "Risk treatment 4",
+      "secret": "Mitigate / Transfer (insurance) / Avoid (cancel) / Accept (documented approval).",
+      "trap": "“Ignore” without acceptance.",
+      "recall": "MTAA",
+      "tags": [
+        "risk"
+      ]
+    },
+    {
+      "id": "c5-ale",
+      "frequency": 94,
+      "hit": "critical",
+      "domain": 5,
+      "objective": "5.2",
+      "title": "ALE = SLE × ARO",
+      "secret": "Quantitative classic. Compare ALE to control cost.",
+      "trap": "Mixing RTO into ALE formula.",
+      "recall": "Loss × how often/year",
+      "tags": [
+        "risk"
+      ]
+    },
+    {
+      "id": "c5-inherent",
+      "frequency": 90,
+      "hit": "critical",
+      "domain": 5,
+      "objective": "5.2",
+      "title": "Inherent vs residual",
+      "secret": "Inherent = before controls; residual = after. Acceptance is about residual.",
+      "trap": "Calling residual “inherent.”",
+      "recall": "Before vs after controls",
+      "tags": [
+        "risk"
+      ]
+    },
+    {
+      "id": "c5-bia",
+      "frequency": 91,
+      "hit": "critical",
+      "domain": 5,
+      "objective": "5.2",
+      "title": "BIA",
+      "secret": "Identifies critical processes and impact of disruption → drives RTO/RPO priorities.",
+      "trap": "Thinking BIA is a pen test report.",
+      "recall": "What hurts if it stops?",
+      "tags": [
+        "BCM"
+      ]
+    },
+    {
+      "id": "c5-rto-rpo",
+      "frequency": 93,
+      "hit": "critical",
+      "domain": 3,
+      "objective": "3.4",
+      "title": "RTO vs RPO",
+      "secret": "RTO=time to restore service; RPO=how much data loss (time) is tolerable.",
+      "trap": "Swapping the two.",
+      "recall": "RTO=clock, RPO=data age",
+      "tags": [
+        "DR"
+      ]
+    },
+    {
+      "id": "c5-sod",
+      "frequency": 89,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.1",
+      "title": "Separation of duties",
+      "secret": "No single person owns end-to-end critical process (e.g., request + approve + pay).",
+      "trap": "Job rotation as the same thing (related but different).",
+      "recall": "Split the keys",
+      "tags": [
+        "governance"
+      ]
+    },
+    {
+      "id": "c5-pci-gdpr",
+      "frequency": 92,
+      "hit": "critical",
+      "domain": 5,
+      "objective": "5.4",
+      "title": "PCI vs GDPR vs HIPAA",
+      "secret": "PCI=cardholder data; GDPR=EU personal data; HIPAA=US health PHI.",
+      "trap": "Applying PCI to all PII scenarios.",
+      "recall": "Match data type → law",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "c5-thirdparty",
+      "frequency": 88,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.3",
+      "title": "Third-party risk",
+      "secret": "Assess vendors, contracts, right-to-audit, data handling SLAs.",
+      "trap": "Trusting SOC logo without scope review.",
+      "recall": "Your vendor = your risk",
+      "tags": [
+        "vendor"
+      ]
+    },
+    {
+      "id": "c5-aup",
+      "frequency": 84,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.1",
+      "title": "Policy types",
+      "secret": "AUP=acceptable use; policy=high-level; standard=mandatory specifics; procedure=how-to; guideline=recommended.",
+      "trap": "Calling a procedure a policy.",
+      "recall": "Policy why / procedure how",
+      "tags": [
+        "governance"
+      ]
+    },
+    {
+      "id": "c5-awareness",
+      "frequency": 86,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.6",
+      "title": "Awareness metrics",
+      "secret": "Measure behavior change (phishing sim click rates), not just attendance.",
+      "trap": "Certificate of attendance as proof of effectiveness.",
+      "recall": "Did behavior change?",
+      "tags": [
+        "training"
+      ]
+    },
+    {
+      "id": "c3-zerotrust",
+      "frequency": 96,
+      "hit": "critical",
+      "domain": 1,
+      "objective": "1.2",
+      "title": "Zero Trust",
+      "secret": "Never trust by network location. Verify explicitly, least privilege, assume breach.",
+      "trap": "“VPN = internal = trusted forever.”",
+      "recall": "Authenticate every request",
+      "tags": [
+        "ZT"
+      ]
+    },
+    {
+      "id": "c3-defense",
+      "frequency": 94,
+      "hit": "critical",
+      "domain": 3,
+      "objective": "3.2",
+      "title": "Defense in depth",
+      "secret": "Layer complementary controls so one failure isn’t catastrophic.",
+      "trap": "Single perfect firewall as complete answer.",
+      "recall": "Layers > silver bullet",
+      "tags": [
+        "architecture"
+      ]
+    },
+    {
+      "id": "c3-microseg",
+      "frequency": 92,
+      "hit": "critical",
+      "domain": 3,
+      "objective": "3.2",
+      "title": "Segmentation / microseg",
+      "secret": "Limits east-west lateral movement. Critical for ransomware and OT isolation.",
+      "trap": "Flat VLAN “for simplicity.”",
+      "recall": "Break the blast radius",
+      "tags": [
+        "network"
+      ]
+    },
+    {
+      "id": "c3-dmz",
+      "frequency": 90,
+      "hit": "critical",
+      "domain": 3,
+      "objective": "3.2",
+      "title": "DMZ / screened subnet",
+      "secret": "Public services live in DMZ with controlled paths to internal.",
+      "trap": "Putting DB directly on Internet.",
+      "recall": "Public face in the buffer",
+      "tags": [
+        "network"
+      ]
+    },
+    {
+      "id": "c3-waf",
+      "frequency": 91,
+      "hit": "critical",
+      "domain": 3,
+      "objective": "3.2",
+      "title": "WAF placement",
+      "secret": "In front of web apps for HTTP exploits (SQLi/XSS). Complements, doesn’t replace secure code.",
+      "trap": "WAF instead of network firewall for all traffic types.",
+      "recall": "HTTP shield for apps",
+      "tags": [
+        "appsec"
+      ]
+    },
+    {
+      "id": "c3-data-states",
+      "frequency": 93,
+      "hit": "critical",
+      "domain": 3,
+      "objective": "3.3",
+      "title": "Data states",
+      "secret": "At rest→encrypt disks/DB; in transit→TLS/IPsec; in use→hardest (confidential computing / access control).",
+      "trap": "One control covering all three states.",
+      "recall": "Rest / transit / use",
+      "tags": [
+        "data"
+      ]
+    },
+    {
+      "id": "c3-token",
+      "frequency": 85,
+      "hit": "high",
+      "domain": 3,
+      "objective": "3.3",
+      "title": "Tokenization vs encryption",
+      "secret": "Tokenization replaces value with vault-mapped token; encryption transforms with key math.",
+      "trap": "Calling hashing tokenization.",
+      "recall": "Token = placeholder map",
+      "tags": [
+        "data"
+      ]
+    },
+    {
+      "id": "c3-hot-warm",
+      "frequency": 88,
+      "hit": "high",
+      "domain": 3,
+      "objective": "3.4",
+      "title": "Hot / warm / cold site",
+      "secret": "Hot≈ready failover; warm=partial; cold=facility only. Cost ↔ RTO tradeoff.",
+      "trap": "Cold site for near-zero RTO.",
+      "recall": "Hotter = faster = $",
+      "tags": [
+        "DR"
+      ]
+    },
+    {
+      "id": "c3-shared-resp",
+      "frequency": 89,
+      "hit": "high",
+      "domain": 3,
+      "objective": "3.1",
+      "title": "Cloud shared responsibility",
+      "secret": "Provider secures cloud; you secure in-cloud (IAM, data, configs). SaaS vs IaaS shifts the line.",
+      "trap": "Assuming provider patches your guest OS in IaaS.",
+      "recall": "Who configures it owns it",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "id": "c3-iac",
+      "frequency": 84,
+      "hit": "high",
+      "domain": 3,
+      "objective": "3.1",
+      "title": "IaC security",
+      "secret": "Versioned, reviewable, repeatable infra reduces drift — scan templates for misconfig.",
+      "trap": "Manual snowflake servers as more secure.",
+      "recall": "Code the cloud",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "id": "c1-controls",
+      "frequency": 97,
+      "hit": "critical",
+      "domain": 1,
+      "objective": "1.1",
+      "title": "Control types",
+      "secret": "Managerial=policy/risk; Technical=firewall/MFA; Operational=processes/reviews; Physical=locks/guards. Also preventive/detective/corrective/deterrent/compensating/directive.",
+      "trap": "Calling training a technical control.",
+      "recall": "Who/what/where of control",
+      "tags": [
+        "controls"
+      ]
+    },
+    {
+      "id": "c1-cia",
+      "frequency": 95,
+      "hit": "critical",
+      "domain": 1,
+      "objective": "1.2",
+      "title": "CIA + non-repudiation",
+      "secret": "Confidentiality=secrecy; Integrity=unaltered; Availability=usable; Non-repudiation=can’t deny (signatures).",
+      "trap": "Using hashing for confidentiality.",
+      "recall": "CIA triangle + proof",
+      "tags": [
+        "fundamentals"
+      ]
+    },
+    {
+      "id": "c1-hash-vs-enc",
+      "frequency": 96,
+      "hit": "critical",
+      "domain": 1,
+      "objective": "1.4",
+      "title": "Hash vs encrypt",
+      "secret": "Hash=one-way integrity; Encrypt=reversible confidentiality (with key); Sign=auth+integrity.",
+      "trap": "“Encrypt passwords with SHA.”",
+      "recall": "Hash≠encrypt",
+      "tags": [
+        "crypto"
+      ]
+    },
+    {
+      "id": "c1-sym-asym",
+      "frequency": 94,
+      "hit": "critical",
+      "domain": 1,
+      "objective": "1.4",
+      "title": "Symmetric vs asymmetric",
+      "secret": "AES=fast shared key; RSA/ECC=public/private for exchange/signatures. Hybrid TLS uses both.",
+      "trap": "AES for digital signatures alone.",
+      "recall": "Same key vs key pair",
+      "tags": [
+        "crypto"
+      ]
+    },
+    {
+      "id": "c1-pki",
+      "frequency": 92,
+      "hit": "critical",
+      "domain": 1,
+      "objective": "1.4",
+      "title": "PKI basics",
+      "secret": "CA signs certs; Issuer=CA; SAN=hostnames; revoke via CRL/OCSP. Compromised CA = trust crisis.",
+      "trap": "Self-signed as equal to public CA trust for browsers.",
+      "recall": "Who signed it?",
+      "tags": [
+        "PKI"
+      ]
+    },
+    {
+      "id": "c1-aaa",
+      "frequency": 90,
+      "hit": "high",
+      "domain": 1,
+      "objective": "1.2",
+      "title": "AAA",
+      "secret": "Authentication=who; Authorization=what allowed; Accounting=what happened (logs).",
+      "trap": "Mixing authn and authz.",
+      "recall": "Who / may / did",
+      "tags": [
+        "IAM"
+      ]
+    },
+    {
+      "id": "c1-honeypot",
+      "frequency": 83,
+      "hit": "medium",
+      "domain": 1,
+      "objective": "1.2",
+      "title": "Deception",
+      "secret": "Honeypot/honeytoken detects/observes attackers — not production storage.",
+      "trap": "Using honeypot as backup target.",
+      "recall": "Fake candy for attackers",
+      "tags": [
+        "deception"
+      ]
+    },
+    {
+      "id": "c1-change",
+      "frequency": 86,
+      "hit": "high",
+      "domain": 1,
+      "objective": "1.3",
+      "title": "Change management",
+      "secret": "Approve, document, rollback plan. Untracked change = outage + audit fail.",
+      "trap": "Emergency change with zero records forever.",
+      "recall": "CAB + rollback",
+      "tags": [
+        "change"
+      ]
+    },
+    {
+      "id": "c-pbq-skip",
+      "frequency": 99,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.1",
+      "title": "PBQ time strategy",
+      "secret": "Flag PBQs early, crush MCQs, return with remaining time. Simulations are skippable with work saved.",
+      "trap": "Spending 20 minutes on PBQ #1 cold.",
+      "recall": "Skip → MCQ → return",
+      "tags": [
+        "PBQ",
+        "strategy"
+      ]
+    },
+    {
+      "id": "c-pbq-firewall",
+      "frequency": 94,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.1",
+      "title": "Firewall PBQ logic",
+      "secret": "Top-down first match. Specific allows before broad deny. Explicit deny at end for host.",
+      "trap": "Deny any any at top.",
+      "recall": "Specific → general → deny",
+      "tags": [
+        "PBQ"
+      ]
+    },
+    {
+      "id": "c-pbq-logs",
+      "frequency": 93,
+      "hit": "critical",
+      "domain": 4,
+      "objective": "4.4",
+      "title": "Log triage PBQ",
+      "secret": "Look for Office→PowerShell, encoded commands, rare outbound C2, unsigned downloads. Ignore toner/normal TGT.",
+      "recall": "Weird process chains",
+      "tags": [
+        "PBQ"
+      ]
+    },
+    {
+      "id": "c-pbq-match",
+      "frequency": 90,
+      "hit": "high",
+      "domain": 1,
+      "objective": "1.1",
+      "title": "Matching PBQs",
+      "secret": "Map example→control type or risk treatment using definitions, not vibes.",
+      "trap": "Overthinking distractors.",
+      "recall": "Definition lock",
+      "tags": [
+        "PBQ"
+      ]
+    },
+    {
+      "id": "c-scenario-best",
+      "frequency": 98,
+      "hit": "critical",
+      "domain": 5,
+      "objective": "5.2",
+      "title": "“BEST / MOST” wording",
+      "secret": "Pick the control that most directly reduces the stated risk with least side effects. Prefer preventive when prevention is possible.",
+      "trap": "Technically true but weak/indirect options.",
+      "recall": "Direct fix to stated risk",
+      "tags": [
+        "strategy"
+      ]
+    },
+    {
+      "id": "c2-bec",
+      "frequency": 90,
+      "hit": "critical",
+      "domain": 2,
+      "objective": "2.2",
+      "title": "BEC",
+      "secret": "Business Email Compromise = social engineering for wire fraud/gift cards via spoofed exec mail. Train finance + out-of-band verify.",
+      "trap": "Treating BEC as malware-only.",
+      "recall": "Call to confirm wires",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "id": "c2-credential-stuff",
+      "frequency": 88,
+      "hit": "high",
+      "domain": 2,
+      "objective": "2.4",
+      "title": "Credential stuffing",
+      "secret": "Replayed breach passwords across sites. Mitigate: MFA + breach monitoring + blocklists + no reuse.",
+      "trap": "Only forcing weekly password change without MFA.",
+      "recall": "Same pass, many sites",
+      "tags": [
+        "identity"
+      ]
+    },
+    {
+      "id": "c2-buffer",
+      "frequency": 84,
+      "hit": "high",
+      "domain": 2,
+      "objective": "2.4",
+      "title": "Buffer overflow",
+      "secret": "Missing bounds checks → memory overwrite / code exec. Mitigate: patch, ASLR/DEP, secure coding.",
+      "trap": "Answering with DLP for overflow.",
+      "recall": "Write past the buffer",
+      "tags": [
+        "malware"
+      ]
+    },
+    {
+      "id": "c2-logic-bomb",
+      "frequency": 78,
+      "hit": "medium",
+      "domain": 2,
+      "objective": "2.4",
+      "title": "Logic bomb",
+      "secret": "Triggers on date/condition. Often insider-planted. Audit + least privilege + code review.",
+      "trap": "Confusing with ransomware encryption stage alone.",
+      "recall": "If date then boom",
+      "tags": [
+        "malware"
+      ]
+    },
+    {
+      "id": "c2-shadow-it",
+      "frequency": 86,
+      "hit": "high",
+      "domain": 2,
+      "objective": "2.1",
+      "title": "Shadow IT",
+      "secret": "Unsanctioned SaaS bypasses logging/SSO/DLP. Discover + CASB/SSPM + approved catalog.",
+      "trap": "Blocking without offering alternatives (drives more shadow).",
+      "recall": "Unknown apps = unknown risk",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "id": "c2-ot-seg",
+      "frequency": 87,
+      "hit": "high",
+      "domain": 2,
+      "objective": "2.5",
+      "title": "OT / ICS isolation",
+      "secret": "Segment OT from IT; strict change control; avoid casual Internet on PLCs.",
+      "trap": "Treating OT like a normal laptop domain.",
+      "recall": "Plant floor ≠ office LAN",
+      "tags": [
+        "OT"
+      ]
+    },
+    {
+      "id": "c2-s3",
+      "frequency": 85,
+      "hit": "high",
+      "domain": 2,
+      "objective": "2.3",
+      "title": "Cloud misconfig",
+      "secret": "Public buckets/over-permissive IAM are top cloud vulns. Scan configs continuously.",
+      "trap": "Assuming CSP auto-secures your object ACLs.",
+      "recall": "Check the ACL",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "id": "c5-kri",
+      "frequency": 85,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.2",
+      "title": "KRI / KPI",
+      "secret": "KRIs warn rising risk; KPIs measure control/process performance. Both report to leadership.",
+      "trap": "Using only vanity metrics (ticket count) as risk.",
+      "recall": "KRI = risk smoke alarm",
+      "tags": [
+        "risk"
+      ]
+    },
+    {
+      "id": "c5-due",
+      "frequency": 87,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.1",
+      "title": "Due care vs diligence",
+      "secret": "Diligence=investigate before deciding; care=ongoing prudent action afterward.",
+      "trap": "Using terms interchangeably on exam.",
+      "recall": "Research then maintain",
+      "tags": [
+        "governance"
+      ]
+    },
+    {
+      "id": "c5-soc2",
+      "frequency": 86,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.4",
+      "title": "SOC 2",
+      "secret": "Assurance on service org controls vs trust criteria. Read scope/exceptions — logo ≠ coverage.",
+      "trap": "Accepting any SOC as proof of PCI compliance.",
+      "recall": "Check the report scope",
+      "tags": [
+        "compliance"
+      ]
+    },
+    {
+      "id": "c5-vacation",
+      "frequency": 82,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.1",
+      "title": "Mandatory vacation",
+      "secret": "Forces another person into the role → can reveal fraud. Pair with SoD.",
+      "trap": "Calling it only an HR perk.",
+      "recall": "Absence reveals fraud",
+      "tags": [
+        "governance"
+      ]
+    },
+    {
+      "id": "c5-msa",
+      "frequency": 83,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.3",
+      "title": "MSSP contracts",
+      "secret": "Define SLAs, escalation, data handling, logging ownership, exit plan.",
+      "trap": "Unsigned handshake “we’ll secure it.”",
+      "recall": "Write the SLA",
+      "tags": [
+        "vendor"
+      ]
+    },
+    {
+      "id": "c5-retention",
+      "frequency": 84,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.4",
+      "title": "Data retention",
+      "secret": "Keep only as long as legal/business need — then securely dispose. Privacy + storage risk.",
+      "trap": "Keep forever “just in case.”",
+      "recall": "Minimize holding time",
+      "tags": [
+        "privacy"
+      ]
+    },
+    {
+      "id": "c5-qual-quant",
+      "frequency": 88,
+      "hit": "high",
+      "domain": 5,
+      "objective": "5.2",
+      "title": "Qualitative vs quantitative",
+      "secret": "Qual=High/Med/Low scales; Quant=dollars/ALE. Many orgs mix both.",
+      "trap": "Forcing ALE when no loss data exists.",
+      "recall": "Words vs dollars",
+      "tags": [
+        "risk"
+      ]
+    }
+  ],
+  "packs": [
+    {
+      "id": "exam-day-v1",
+      "version": "v1.0",
+      "title": "Exam-Day Rapid 30",
+      "subtitle": "Highest-frequency decision rules across all domains",
+      "durationMin": 30,
+      "focus": "Weighted by official domain % (Ops 28% heavy) + public high-yield consensus",
+      "methodology": "Cards scored by: (1) SY0-701 domain weight, (2) objective density in official outline, (3) recurrence in public study guides / instructor PBQ patterns. Not live exam dumps.",
+      "cardIds": [
+        "c-pbq-skip",
+        "c4-ir-order",
+        "c-scenario-best",
+        "c4-mfa",
+        "c5-risk-treat",
+        "c1-controls",
+        "c4-contain-first",
+        "c2-phish-types",
+        "c3-zerotrust",
+        "c1-hash-vs-enc",
+        "c4-least-priv",
+        "c2-ransomware",
+        "c1-cia",
+        "c4-harden",
+        "c5-ale",
+        "c3-defense",
+        "c1-sym-asym",
+        "c-pbq-firewall",
+        "c4-siem",
+        "c2-sqli",
+        "c5-rto-rpo",
+        "c3-data-states",
+        "c-pbq-logs",
+        "c4-edr"
+      ]
+    },
+    {
+      "id": "ops-ir-v1",
+      "version": "v1.0",
+      "title": "Ops + IR Crush",
+      "subtitle": "Domain 4 (28%) — monitoring, IAM, IR, hardening",
+      "durationMin": 30,
+      "focus": "Security Operations — the single largest domain",
+      "methodology": "Prioritizes Domain 4 objectives 4.1–4.9 and IR/forensics decision order.",
+      "cardIds": [
+        "c-pbq-skip",
+        "c4-ir-order",
+        "c4-mfa",
+        "c4-contain-first",
+        "c4-least-priv",
+        "c4-harden",
+        "c-pbq-firewall",
+        "c4-siem",
+        "c-pbq-logs",
+        "c4-edr",
+        "c4-vuln-cred",
+        "c4-chain-custody",
+        "c-pbq-match",
+        "c4-cond-access",
+        "c4-fde",
+        "c4-playbook",
+        "c4-ioc",
+        "c4-tabletop"
+      ]
+    },
+    {
+      "id": "threats-v1",
+      "version": "v1.0",
+      "title": "Threats & Mitigations Sprint",
+      "subtitle": "Domain 2 (22%) — actors, attacks, fixes",
+      "durationMin": 30,
+      "focus": "Identify actor/vector then pick the matching mitigation",
+      "methodology": "Ranks Domain 2 scenarios that commonly appear as “given a scenario” style items in public prep materials.",
+      "cardIds": [
+        "c2-phish-types",
+        "c2-ransomware",
+        "c2-sqli",
+        "c2-actor",
+        "c2-pth",
+        "c2-xss",
+        "c2-bec",
+        "c2-supply",
+        "c2-ddos",
+        "c2-credential-stuff",
+        "c2-allowlist",
+        "c2-ot-seg",
+        "c2-shadow-it",
+        "c2-eol",
+        "c2-s3",
+        "c2-buffer",
+        "c2-arp",
+        "c2-logic-bomb"
+      ]
+    },
+    {
+      "id": "gov-risk-v1",
+      "version": "v1.0",
+      "title": "Governance & Risk Blitz",
+      "subtitle": "Domain 5 (20%) + RTO/RPO — policies, ALE, compliance",
+      "durationMin": 30,
+      "focus": "Risk math, treatment verbs, compliance matching",
+      "methodology": "Emphasizes 5.1–5.6 and recovery objectives often tested with Domain 3 resilience.",
+      "cardIds": [
+        "c-scenario-best",
+        "c5-risk-treat",
+        "c5-ale",
+        "c5-rto-rpo",
+        "c5-pci-gdpr",
+        "c5-bia",
+        "c5-inherent",
+        "c5-sod",
+        "c5-thirdparty",
+        "c3-hot-warm",
+        "c5-qual-quant",
+        "c5-due",
+        "c5-awareness",
+        "c5-soc2",
+        "c5-kri",
+        "c5-aup",
+        "c5-retention",
+        "c5-msa"
+      ]
+    },
+    {
+      "id": "arch-crypto-v1",
+      "version": "v1.0",
+      "title": "Architecture + Crypto Core",
+      "subtitle": "Domains 1 + 3 — controls, ZT, crypto, segmentation",
+      "durationMin": 30,
+      "focus": "Control typing, CIA/crypto choices, enterprise architecture",
+      "methodology": "Combines Domain 1 fundamentals with Domain 3 architecture patterns heavily used in scenario stems.",
+      "cardIds": [
+        "c1-controls",
+        "c3-zerotrust",
+        "c1-hash-vs-enc",
+        "c1-cia",
+        "c3-defense",
+        "c1-sym-asym",
+        "c5-rto-rpo",
+        "c3-data-states",
+        "c3-microseg",
+        "c1-pki",
+        "c3-waf",
+        "c3-dmz",
+        "c1-aaa",
+        "c-pbq-match",
+        "c3-shared-resp",
+        "c3-hot-warm",
+        "c1-change",
+        "c3-token",
+        "c3-iac",
+        "c1-honeypot"
+      ]
+    },
+    {
+      "id": "pbq-patterns-v1",
+      "version": "v1.0",
+      "title": "PBQ Pattern Playbook",
+      "subtitle": "Simulation thinking + exam pacing secrets",
+      "durationMin": 30,
+      "focus": "Firewall order, log triage, matching, time strategy",
+      "methodology": "Derived from CompTIA’s public PBQ guidance (skippable simulations) and common simulation task patterns in training labs — original practice framing only.",
+      "cardIds": [
+        "c-pbq-skip",
+        "c-scenario-best",
+        "c4-ir-order",
+        "c1-controls",
+        "c5-risk-treat",
+        "c4-contain-first",
+        "c-pbq-firewall",
+        "c-pbq-logs",
+        "c3-waf",
+        "c-pbq-match",
+        "c3-dmz",
+        "c4-siem",
+        "c4-edr",
+        "c4-harden",
+        "c3-microseg",
+        "c2-ransomware"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,325 @@
+{
+  "mcq": [
+    {
+      "id": "d5-039",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.1",
+      "stem": "Purchasing cyber insurance is an example of which risk treatment?",
+      "choices": [
+        { "id": "A", "text": "Transfer" },
+        { "id": "B", "text": "Avoidance" },
+        { "id": "C", "text": "Mitigation only" },
+        { "id": "D", "text": "Acceptance of all residual risk without analysis" }
+      ],
+      "answer": ["A"],
+      "explanation": "Insurance transfers financial impact to another party.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d5-040",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.1",
+      "stem": "Canceling a project because residual risk is unacceptable is:",
+      "choices": [
+        { "id": "A", "text": "Risk avoidance" },
+        { "id": "B", "text": "Risk transfer" },
+        { "id": "C", "text": "Risk acceptance" },
+        { "id": "D", "text": "Risk aggregation only" }
+      ],
+      "answer": ["A"],
+      "explanation": "Avoidance means not taking the risky activity at all.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d5-041",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.2",
+      "stem": "A quantitative risk analysis expresses loss primarily in:",
+      "choices": [
+        { "id": "A", "text": "Monetary values (e.g., ALE, SLE)" },
+        { "id": "B", "text": "Only color codes with no numbers" },
+        { "id": "C", "text": "Only badge artwork" },
+        { "id": "D", "text": "Only cable categories" }
+      ],
+      "answer": ["A"],
+      "explanation": "Quantitative methods assign dollar figures to likelihood and impact.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-042",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.2",
+      "stem": "ALE equals:",
+      "choices": [
+        { "id": "A", "text": "SLE × ARO" },
+        { "id": "B", "text": "MTTR × MTTF only" },
+        { "id": "C", "text": "RTO − RPO" },
+        { "id": "D", "text": "CVSS × port number" }
+      ],
+      "answer": ["A"],
+      "explanation": "Annualized Loss Expectancy is Single Loss Expectancy times Annual Rate of Occurrence.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-043",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.3",
+      "stem": "GDPR and similar laws primarily drive which organizational concern?",
+      "choices": [
+        { "id": "A", "text": "Privacy and lawful processing of personal data" },
+        { "id": "B", "text": "Toner recycling only" },
+        { "id": "C", "text": "Monitor refresh only" },
+        { "id": "D", "text": "Desk height only" }
+      ],
+      "answer": ["A"],
+      "explanation": "Privacy regulations require lawful, transparent handling of personal information.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d5-044",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.3",
+      "stem": "Data minimization means:",
+      "choices": [
+        { "id": "A", "text": "Collecting and retaining only what is needed for the stated purpose" },
+        { "id": "B", "text": "Storing every log forever without review" },
+        { "id": "C", "text": "Sharing PII widely by default" },
+        { "id": "D", "text": "Disabling access reviews" }
+      ],
+      "answer": ["A"],
+      "explanation": "Minimize collection/retention to reduce privacy and breach impact.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-045",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "Change management’s security value is MAINLY to:",
+      "choices": [
+        { "id": "A", "text": "Reduce unauthorized or poorly tested modifications that cause outages or exposures" },
+        { "id": "B", "text": "Eliminate all documentation" },
+        { "id": "C", "text": "Guarantee zero vulnerabilities forever" },
+        { "id": "D", "text": "Replace backups" }
+      ],
+      "answer": ["A"],
+      "explanation": "Formal change control catches risky changes before production.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-046",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "A rollback plan in a change record exists to:",
+      "choices": [
+        { "id": "A", "text": "Restore the prior known-good state if the change fails" },
+        { "id": "B", "text": "Delete audit logs" },
+        { "id": "C", "text": "Share root passwords" },
+        { "id": "D", "text": "Disable monitoring" }
+      ],
+      "answer": ["A"],
+      "explanation": "Backout plans limit blast radius when deployments go wrong.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d5-047",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.5",
+      "stem": "An acceptable use policy (AUP) primarily sets:",
+      "choices": [
+        { "id": "A", "text": "Rules for how employees may use corporate systems and data" },
+        { "id": "B", "text": "Firewall ASIC clock rates" },
+        { "id": "C", "text": "UPS battery chemistry" },
+        { "id": "D", "text": "Cable bend radius only" }
+      ],
+      "answer": ["A"],
+      "explanation": "AUPs communicate permitted and prohibited technology use.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d5-048",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.5",
+      "stem": "Job rotation and mandatory vacations can help detect:",
+      "choices": [
+        { "id": "A", "text": "Fraud or unauthorized practices hidden by a single person" },
+        { "id": "B", "text": "Only DNS TTL issues" },
+        { "id": "C", "text": "Only toner levels" },
+        { "id": "D", "text": "Only HDMI handshake failures" }
+      ],
+      "answer": ["A"],
+      "explanation": "Another person performing duties may uncover concealed misuse.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-049",
+      "type": "mcq_multi",
+      "domain": 5,
+      "objective": "5.1",
+      "stem": "Which TWO statements about residual risk are true?",
+      "choices": [
+        { "id": "A", "text": "It remains after controls are applied" },
+        { "id": "B", "text": "Leadership may formally accept it" },
+        { "id": "C", "text": "It is always zero after any firewall is installed" },
+        { "id": "D", "text": "It cannot be discussed in audits" }
+      ],
+      "answer": ["A", "B"],
+      "explanation": "Controls reduce but rarely eliminate risk; acceptance is a valid treatment.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d5-050",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.2",
+      "stem": "A BIA (business impact analysis) identifies:",
+      "choices": [
+        { "id": "A", "text": "Critical processes and the impact of their disruption" },
+        { "id": "B", "text": "Only preferred lunch vendors" },
+        { "id": "C", "text": "Only monitor brands" },
+        { "id": "D", "text": "Only desk plants" }
+      ],
+      "answer": ["A"],
+      "explanation": "BIAs drive RTO/RPO and continuity priorities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-051",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.3",
+      "stem": "Data retention schedules should balance:",
+      "choices": [
+        { "id": "A", "text": "Legal/business needs against privacy and storage risk" },
+        { "id": "B", "text": "Only disk color" },
+        { "id": "C", "text": "Only rack aesthetics" },
+        { "id": "D", "text": "Only cable colors" }
+      ],
+      "answer": ["A"],
+      "explanation": "Keep data as required, delete when no longer needed or allowed.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-052",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "Separation of duties BEST prevents:",
+      "choices": [
+        { "id": "A", "text": "One person both requesting and approving high-risk actions alone" },
+        { "id": "B", "text": "All collaboration" },
+        { "id": "C", "text": "Use of MFA" },
+        { "id": "D", "text": "Logging" }
+      ],
+      "answer": ["A"],
+      "explanation": "Splitting conflicting roles reduces fraud and error.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-053",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.5",
+      "stem": "Security awareness training is MOST effective when it is:",
+      "choices": [
+        { "id": "A", "text": "Role-relevant, recurring, and measured (e.g., phishing simulations)" },
+        { "id": "B", "text": "A one-time unread PDF at hire only" },
+        { "id": "C", "text": "Optional for privileged admins" },
+        { "id": "D", "text": "Focused only on cafeteria rules" }
+      ],
+      "answer": ["A"],
+      "explanation": "Continuous, relevant training with feedback changes behavior.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-054",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.6",
+      "stem": "Third-party risk assessments should occur:",
+      "choices": [
+        { "id": "A", "text": "Before onboarding and periodically during the relationship" },
+        { "id": "B", "text": "Only after a breach is public" },
+        { "id": "C", "text": "Never for SaaS" },
+        { "id": "D", "text": "Only based on logo quality" }
+      ],
+      "answer": ["A"],
+      "explanation": "Vendors introduce ongoing risk that needs initial and continuous review.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-055",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.6",
+      "stem": "Right-to-audit clauses in contracts help customers:",
+      "choices": [
+        { "id": "A", "text": "Verify a vendor’s security controls when needed" },
+        { "id": "B", "text": "Disable encryption" },
+        { "id": "C", "text": "Share root passwords publicly" },
+        { "id": "D", "text": "Skip MFA" }
+      ],
+      "answer": ["A"],
+      "explanation": "Contractual audit rights support assurance beyond marketing claims.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-056",
+      "type": "mcq_multi",
+      "domain": 5,
+      "objective": "5.3",
+      "stem": "Which TWO are privacy-enhancing practices?",
+      "choices": [
+        { "id": "A", "text": "Pseudonymization where feasible" },
+        { "id": "B", "text": "Purpose limitation for collected data" },
+        { "id": "C", "text": "Publishing full SSNs on public wikis" },
+        { "id": "D", "text": "Unlimited retention of all customer PII by default" }
+      ],
+      "answer": ["A", "B"],
+      "explanation": "Pseudonymization and purpose limits reduce privacy risk.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d5-057",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.1",
+      "stem": "A risk register is used to:",
+      "choices": [
+        { "id": "A", "text": "Track identified risks, owners, treatments, and status" },
+        { "id": "B", "text": "Store only Wi-Fi PSKs" },
+        { "id": "C", "text": "Replace incident tickets" },
+        { "id": "D", "text": "Configure BIOS fans" }
+      ],
+      "answer": ["A"],
+      "explanation": "Registers provide an authoritative inventory of enterprise risks.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d5-058",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "An emergency change process should still require:",
+      "choices": [
+        { "id": "A", "text": "Expedited approval, documentation, and post-implementation review" },
+        { "id": "B", "text": "No records at all" },
+        { "id": "C", "text": "Anonymous production access forever" },
+        { "id": "D", "text": "Disabling all monitoring" }
+      ],
+      "answer": ["A"],
+      "explanation": "Emergencies accelerate change but must remain accountable and reviewable.",
+      "difficulty": "hard"
+    }
+  ],
+  "pbq": []
+}

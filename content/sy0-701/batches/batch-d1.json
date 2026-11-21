@@ -1,0 +1,197 @@
+{
+  "mcq": [
+    {
+      "id": "d1-038",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.1",
+      "stem": "Which control primarily protects data confidentiality when a laptop is stolen?",
+      "choices": [
+        { "id": "A", "text": "Full-disk encryption" },
+        { "id": "B", "text": "Screen lock timeout only" },
+        { "id": "C", "text": "Asset inventory tagging" },
+        { "id": "D", "text": "UPS battery backup" }
+      ],
+      "answer": ["A"],
+      "explanation": "Full-disk encryption keeps data unreadable without keys even if the drive is removed.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d1-039",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.2",
+      "stem": "A locked server cage in a data center is BEST classified as which control type?",
+      "choices": [
+        { "id": "A", "text": "Technical" },
+        { "id": "B", "text": "Managerial" },
+        { "id": "C", "text": "Physical" },
+        { "id": "D", "text": "Operational detective" }
+      ],
+      "answer": ["C"],
+      "explanation": "Cages and locks restrict physical access and are physical controls.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d1-040",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.3",
+      "stem": "Which change BEST strengthens password-based authentication for remote VPN users?",
+      "choices": [
+        { "id": "A", "text": "Require MFA in addition to the password" },
+        { "id": "B", "text": "Shorten passwords to six characters" },
+        { "id": "C", "text": "Share one VPN account per team" },
+        { "id": "D", "text": "Disable account lockout" }
+      ],
+      "answer": ["A"],
+      "explanation": "MFA adds another factor so stolen passwords alone are insufficient.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d1-041",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.4",
+      "stem": "Which cryptographic primitive provides integrity verification but not confidentiality by itself?",
+      "choices": [
+        { "id": "A", "text": "AES-GCM only without hashing" },
+        { "id": "B", "text": "SHA-256 hash of the file" },
+        { "id": "C", "text": "Stream cipher encryption alone" },
+        { "id": "D", "text": "Base64 encoding" }
+      ],
+      "answer": ["B"],
+      "explanation": "A hash detects changes; it does not encrypt or hide content.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-042",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.4",
+      "stem": "An organization needs fast bulk encryption of large datasets with a single shared key. Which approach fits BEST?",
+      "choices": [
+        { "id": "A", "text": "Symmetric encryption (e.g., AES)" },
+        { "id": "B", "text": "RSA for every file without hybrid wrapping" },
+        { "id": "C", "text": "MD5 checksums only" },
+        { "id": "D", "text": "Plaintext with steganography" }
+      ],
+      "answer": ["A"],
+      "explanation": "Symmetric ciphers are efficient for large volumes when key distribution is managed.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-043",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.4",
+      "stem": "Which algorithm is commonly used for digital signatures and key exchange rather than bulk data encryption?",
+      "choices": [
+        { "id": "A", "text": "AES-256" },
+        { "id": "B", "text": "RSA or ECC" },
+        { "id": "C", "text": "ChaCha20 only as a hash" },
+        { "id": "D", "text": "CRC32" }
+      ],
+      "answer": ["B"],
+      "explanation": "Asymmetric algorithms like RSA/ECC excel at signatures and key exchange, not bulk encryption.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-044",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.2",
+      "stem": "A policy requiring monthly access reviews is primarily which control category?",
+      "choices": [
+        { "id": "A", "text": "Managerial" },
+        { "id": "B", "text": "Physical" },
+        { "id": "C", "text": "Technical preventive only" },
+        { "id": "D", "text": "Compensating hardware" }
+      ],
+      "answer": ["A"],
+      "explanation": "Policies and formal reviews are managerial (administrative) controls.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d1-045",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.1",
+      "stem": "A signed software update that attackers cannot forge supports which security goal MOST directly?",
+      "choices": [
+        { "id": "A", "text": "Integrity and authenticity of the update" },
+        { "id": "B", "text": "Availability of the CDN only" },
+        { "id": "C", "text": "Confidentiality of user passwords" },
+        { "id": "D", "text": "Physical security of the SOC" }
+      ],
+      "answer": ["A"],
+      "explanation": "Signatures prove the publisher and that the package was not altered.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-046",
+      "type": "mcq_multi",
+      "domain": 1,
+      "objective": "1.3",
+      "stem": "Which TWO practices strengthen identity and access management?",
+      "choices": [
+        { "id": "A", "text": "Just-in-time privileged access" },
+        { "id": "B", "text": "Shared local admin passwords on all servers" },
+        { "id": "C", "text": "Role-based access control (RBAC)" },
+        { "id": "D", "text": "Disabling logging of authentication events" }
+      ],
+      "answer": ["A", "C"],
+      "explanation": "JIT privilege and RBAC reduce standing rights and align access to job roles.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d1-047",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.4",
+      "stem": "Perfect forward secrecy in TLS MOST helps when which event occurs?",
+      "choices": [
+        { "id": "A", "text": "A long-term server private key is later compromised" },
+        { "id": "B", "text": "A user forgets their password" },
+        { "id": "C", "text": "A switch loses power briefly" },
+        { "id": "D", "text": "DNS TTL expires" }
+      ],
+      "answer": ["A"],
+      "explanation": "PFS uses ephemeral session keys so past sessions stay safe if the server key leaks later.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d1-048",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.5",
+      "stem": "Which technology lets a browser verify a public key is bound to example.com?",
+      "choices": [
+        { "id": "A", "text": "X.509 certificate issued by a trusted CA" },
+        { "id": "B", "text": "WEP shared key" },
+        { "id": "C", "text": "FTP anonymous login" },
+        { "id": "D", "text": "MAC address filtering alone" }
+      ],
+      "answer": ["A"],
+      "explanation": "PKI certificates bind identities to keys under a trust chain browsers recognize.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-049",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.2",
+      "stem": "Security cameras that record after motion detection are primarily which control function?",
+      "choices": [
+        { "id": "A", "text": "Detective" },
+        { "id": "B", "text": "Preventive only" },
+        { "id": "C", "text": "Corrective encryption" },
+        { "id": "D", "text": "Directive policymaking" }
+      ],
+      "answer": ["A"],
+      "explanation": "Cameras detect and record events; they do not by themselves prevent entry.",
+      "difficulty": "easy"
+    }
+  ],
+  "pbq": []
+}

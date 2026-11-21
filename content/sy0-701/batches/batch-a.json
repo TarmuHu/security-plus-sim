@@ -1,0 +1,3277 @@
+{
+  "mcq": [
+    {
+      "id": "d1-038",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.1",
+      "stem": "Which term describes verifying that a user is who they claim to be?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Authorization"
+        },
+        {
+          "id": "B",
+          "text": "Authentication"
+        },
+        {
+          "id": "C",
+          "text": "Accounting"
+        },
+        {
+          "id": "D",
+          "text": "Auditing"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Authentication proves identity; authorization determines what an authenticated subject may do.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-039",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.2",
+      "stem": "A company installs badge readers at all entrances. Which control category BEST describes this?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Technical detective"
+        },
+        {
+          "id": "B",
+          "text": "Physical preventive"
+        },
+        {
+          "id": "C",
+          "text": "Managerial corrective"
+        },
+        {
+          "id": "D",
+          "text": "Operational compensating"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Badge readers restrict physical access and are physical preventive controls.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-040",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.3",
+      "stem": "An attacker floods a web server with SYN packets to exhaust connection tables. Which attack type is this?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "SQL injection"
+        },
+        {
+          "id": "B",
+          "text": "SYN flood"
+        },
+        {
+          "id": "C",
+          "text": "Pass-the-hash"
+        },
+        {
+          "id": "D",
+          "text": "ARP spoofing"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "SYN floods are denial-of-service attacks that consume TCP handshake resources.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-041",
+      "type": "mcq_multi",
+      "domain": 1,
+      "objective": "1.4",
+      "stem": "Select ALL that are examples of social engineering. (Select ALL that apply.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Phishing email"
+        },
+        {
+          "id": "B",
+          "text": "AES-256 encryption"
+        },
+        {
+          "id": "C",
+          "text": "Pretexting phone call"
+        },
+        {
+          "id": "D",
+          "text": "Full disk encryption"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "Phishing and pretexting manipulate people; encryption is a technical control, not social engineering.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-042",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.1",
+      "stem": "Which goal of the CIA triad is MOST directly supported by RAID and redundant power supplies?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Confidentiality"
+        },
+        {
+          "id": "B",
+          "text": "Integrity"
+        },
+        {
+          "id": "C",
+          "text": "Availability"
+        },
+        {
+          "id": "D",
+          "text": "Non-repudiation"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "Redundancy improves availability by reducing single points of failure.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-043",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "2.1",
+      "stem": "Which wireless standard introduced WPA3 with SAE for improved personal-network authentication?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "802.11ac"
+        },
+        {
+          "id": "B",
+          "text": "802.11ax"
+        },
+        {
+          "id": "C",
+          "text": "802.11i with WPA3"
+        },
+        {
+          "id": "D",
+          "text": "802.11n only"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "WPA3 uses Simultaneous Authentication of Equals (SAE) to strengthen pre-shared key networks.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-044",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.2",
+      "stem": "A security policy requiring annual password rotation is BEST classified as:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Technical"
+        },
+        {
+          "id": "B",
+          "text": "Physical"
+        },
+        {
+          "id": "C",
+          "text": "Managerial"
+        },
+        {
+          "id": "D",
+          "text": "Operational detective"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "Policies and standards are managerial controls that guide organizational behavior.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-045",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.3",
+      "stem": "Which threat actor is MOST likely motivated by ideology rather than profit?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Organized crime"
+        },
+        {
+          "id": "B",
+          "text": "Hacktivist"
+        },
+        {
+          "id": "C",
+          "text": "Insider trader"
+        },
+        {
+          "id": "D",
+          "text": "Competitor espionage for market advantage"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Hacktivists pursue political or social goals; organized crime and espionage typically seek financial or competitive gain.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-046",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.4",
+      "stem": "An employee finds a USB drive labeled \"Payroll\" in the parking lot and plugs it into a workstation. Which attack vector is this?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Watering hole"
+        },
+        {
+          "id": "B",
+          "text": "Baiting"
+        },
+        {
+          "id": "C",
+          "text": "Vishing"
+        },
+        {
+          "id": "D",
+          "text": "Typosquatting"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Baiting lures victims with tempting items such as labeled removable media.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-047",
+      "type": "mcq_multi",
+      "domain": 1,
+      "objective": "1.1",
+      "stem": "Which TWO principles are MOST directly addressed by digital signatures on email? (Select TWO.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Integrity"
+        },
+        {
+          "id": "B",
+          "text": "Availability"
+        },
+        {
+          "id": "C",
+          "text": "Non-repudiation"
+        },
+        {
+          "id": "D",
+          "text": "Obfuscation"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "Digital signatures detect tampering (integrity) and tie sending to a key holder (non-repudiation).",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-048",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.2",
+      "stem": "Cameras recording entry to a data center support which control function?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Physical detective"
+        },
+        {
+          "id": "B",
+          "text": "Technical preventive"
+        },
+        {
+          "id": "C",
+          "text": "Managerial directive"
+        },
+        {
+          "id": "D",
+          "text": "Operational preventive only"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Cameras record events for review after the fact, which is detective in nature.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d1-049",
+      "type": "mcq_single",
+      "domain": 1,
+      "objective": "1.3",
+      "stem": "Which malware type replicates across networks without requiring a host file attachment?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Trojan"
+        },
+        {
+          "id": "B",
+          "text": "Worm"
+        },
+        {
+          "id": "C",
+          "text": "Logic bomb"
+        },
+        {
+          "id": "D",
+          "text": "Rootkit"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Worms self-propagate over networks; Trojans rely on user execution and disguise.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-040",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "Which port does HTTPS use by default?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "80"
+        },
+        {
+          "id": "B",
+          "text": "443"
+        },
+        {
+          "id": "C",
+          "text": "22"
+        },
+        {
+          "id": "D",
+          "text": "3389"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "HTTPS typically uses TCP port 443 for TLS-protected HTTP.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-041",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.2",
+      "stem": "Which protocol provides encrypted remote shell access on port 22?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Telnet"
+        },
+        {
+          "id": "B",
+          "text": "SSH"
+        },
+        {
+          "id": "C",
+          "text": "FTP"
+        },
+        {
+          "id": "D",
+          "text": "SNMPv1"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "SSH encrypts terminal sessions; Telnet and legacy FTP send credentials in cleartext.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-042",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.3",
+      "stem": "A security architect needs mutual authentication and encrypted web traffic. Which is the BEST choice?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "HTTP over port 80"
+        },
+        {
+          "id": "B",
+          "text": "TLS 1.3"
+        },
+        {
+          "id": "C",
+          "text": "Telnet"
+        },
+        {
+          "id": "D",
+          "text": "FTP active mode"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "TLS 1.3 provides modern encryption and supports client/server authentication via certificates.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-043",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.4",
+      "stem": "Which wireless security mode uses per-session keys derived from 802.1X authentication?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "WEP"
+        },
+        {
+          "id": "B",
+          "text": "WPA2-Personal"
+        },
+        {
+          "id": "C",
+          "text": "WPA2-Enterprise"
+        },
+        {
+          "id": "D",
+          "text": "Open SSID"
+        }
+      ],
+      "answer": [
+        "C"
+      ],
+      "explanation": "WPA2-Enterprise integrates with RADIUS/802.1X for unique keying per association.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-044",
+      "type": "mcq_multi",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "Select ALL protocols that typically operate on UDP. (Select ALL that apply.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "DNS"
+        },
+        {
+          "id": "B",
+          "text": "HTTPS"
+        },
+        {
+          "id": "C",
+          "text": "DHCP"
+        },
+        {
+          "id": "D",
+          "text": "SSH"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "DNS and DHCP commonly use UDP; HTTPS and SSH use TCP.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-045",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.5",
+      "stem": "Which cloud deployment model is dedicated to a single organization?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Public"
+        },
+        {
+          "id": "B",
+          "text": "Private"
+        },
+        {
+          "id": "C",
+          "text": "Community"
+        },
+        {
+          "id": "D",
+          "text": "Hybrid only"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Private cloud infrastructure is provisioned for exclusive use by one organization.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-046",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.6",
+      "stem": "In a SaaS model, who is typically responsible for patching the application?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Customer only"
+        },
+        {
+          "id": "B",
+          "text": "Cloud provider"
+        },
+        {
+          "id": "C",
+          "text": "Customer ISP"
+        },
+        {
+          "id": "D",
+          "text": "End-user desktop team"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Under SaaS, the provider manages the application stack including patches.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-047",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.2",
+      "stem": "Which record type is used to associate a hostname with an IPv4 address?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "MX"
+        },
+        {
+          "id": "B",
+          "text": "A"
+        },
+        {
+          "id": "C",
+          "text": "TXT"
+        },
+        {
+          "id": "D",
+          "text": "CNAME"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "A records map names to IPv4 addresses; MX handles mail routing.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-048",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.3",
+      "stem": "IPsec in tunnel mode is commonly used for:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Link-local only"
+        },
+        {
+          "id": "B",
+          "text": "Site-to-site VPN"
+        },
+        {
+          "id": "C",
+          "text": "Cleartext HTTP"
+        },
+        {
+          "id": "D",
+          "text": "Local ARP cache"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Tunnel mode encapsulates entire IP packets for gateway-to-gateway VPNs.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-049",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.4",
+      "stem": "Which 802.11 feature reduces broadcast domains on a wireless LAN?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "SSID hiding"
+        },
+        {
+          "id": "B",
+          "text": "VLAN assignment via wireless controller"
+        },
+        {
+          "id": "C",
+          "text": "WEP"
+        },
+        {
+          "id": "D",
+          "text": "Open authentication"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Mapping SSIDs or clients to VLANs segments wireless traffic like wired LANs.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-050",
+      "type": "mcq_multi",
+      "domain": 2,
+      "objective": "2.5",
+      "stem": "Which TWO are shared responsibility concerns in IaaS? (Select TWO.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Guest OS patching"
+        },
+        {
+          "id": "B",
+          "text": "Physical data center security"
+        },
+        {
+          "id": "C",
+          "text": "Hypervisor firmware by tenant"
+        },
+        {
+          "id": "D",
+          "text": "Customer data classification"
+        }
+      ],
+      "answer": [
+        "A",
+        "D"
+      ],
+      "explanation": "Customers patch guest OS and classify data; provider secures physical facilities and hypervisor.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-051",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.6",
+      "stem": "A container escape targets weaknesses in:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "DNS caching"
+        },
+        {
+          "id": "B",
+          "text": "Host kernel or runtime isolation"
+        },
+        {
+          "id": "C",
+          "text": "MX records"
+        },
+        {
+          "id": "D",
+          "text": "Cable labeling"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Escapes break out of container isolation via kernel or runtime flaws.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-052",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "LDAP over TLS (LDAPS) primarily protects:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Availability of directory"
+        },
+        {
+          "id": "B",
+          "text": "Confidentiality and integrity of directory queries"
+        },
+        {
+          "id": "C",
+          "text": "Printer toner levels"
+        },
+        {
+          "id": "D",
+          "text": "Physical badge printing"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "LDAPS encrypts directory traffic to protect credentials and query results.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-053",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.2",
+      "stem": "Which email security mechanism allows a domain to publish authorized sending IPs?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "SPF"
+        },
+        {
+          "id": "B",
+          "text": "S/MIME only"
+        },
+        {
+          "id": "C",
+          "text": "POP3"
+        },
+        {
+          "id": "D",
+          "text": "IMAP cleartext"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "SPF DNS records list permitted mail sources for a domain.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-054",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.3",
+      "stem": "SFTP provides file transfer over:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "SSH"
+        },
+        {
+          "id": "B",
+          "text": "SNMP"
+        },
+        {
+          "id": "C",
+          "text": "Telnet"
+        },
+        {
+          "id": "D",
+          "text": "NetBIOS"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "SFTP is a subsystem of SSH, not legacy FTP over TLS alone.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-055",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.4",
+      "stem": "WPA3-Enterprise still relies on which framework for centralized authentication?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "802.1X"
+        },
+        {
+          "id": "B",
+          "text": "WEP shared key"
+        },
+        {
+          "id": "C",
+          "text": "Open system"
+        },
+        {
+          "id": "D",
+          "text": "MAC filtering only"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Enterprise modes use 802.1X with EAP methods regardless of WPA2 or WPA3.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-056",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.5",
+      "stem": "A VPC peering connection in cloud environments primarily enables:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Private routing between virtual networks"
+        },
+        {
+          "id": "B",
+          "text": "Public internet DDoS"
+        },
+        {
+          "id": "C",
+          "text": "Physical rack access"
+        },
+        {
+          "id": "D",
+          "text": "Offline tape rotation"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Peering links cloud virtual networks for private communication paths.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-057",
+      "type": "mcq_multi",
+      "domain": 2,
+      "objective": "2.6",
+      "stem": "Select ALL that are examples of serverless compute. (Select ALL that apply.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Function triggered by object upload"
+        },
+        {
+          "id": "B",
+          "text": "Always-on dedicated VM"
+        },
+        {
+          "id": "C",
+          "text": "Event-driven API backend"
+        },
+        {
+          "id": "D",
+          "text": "Bare-metal lease"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "Serverless runs code on demand without persistent server management by the customer.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-058",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.1",
+      "stem": "Which protocol secures web traffic and can display a padlock in browsers?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "HTTP"
+        },
+        {
+          "id": "B",
+          "text": "HTTPS"
+        },
+        {
+          "id": "C",
+          "text": "FTP"
+        },
+        {
+          "id": "D",
+          "text": "TFTP"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "HTTPS wraps HTTP in TLS for encryption and server authentication.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-059",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.2",
+      "stem": "DNSSEC primarily adds:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Encryption of all DNS traffic by default"
+        },
+        {
+          "id": "B",
+          "text": "Data origin authentication for DNS responses"
+        },
+        {
+          "id": "C",
+          "text": "Blocklisting of phishing"
+        },
+        {
+          "id": "D",
+          "text": "Wireless roaming"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "DNSSEC signs records so resolvers can verify authenticity, not confidentiality of queries.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-060",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.3",
+      "stem": "A site-to-site VPN between branch offices commonly uses:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "IPsec or SSL VPN gateways"
+        },
+        {
+          "id": "B",
+          "text": "Telnet reverse shells"
+        },
+        {
+          "id": "C",
+          "text": "Unencrypted GRE only"
+        },
+        {
+          "id": "D",
+          "text": "SNMP traps"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Gateways terminate IPsec or SSL VPN tunnels between sites.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d2-061",
+      "type": "mcq_single",
+      "domain": 2,
+      "objective": "2.4",
+      "stem": "Disabling SSID broadcast is considered:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Strong encryption"
+        },
+        {
+          "id": "B",
+          "text": "Security through obscurity with limited value"
+        },
+        {
+          "id": "C",
+          "text": "802.1X"
+        },
+        {
+          "id": "D",
+          "text": "WPA3-Enterprise"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Hidden SSIDs are easily discovered and do not replace strong authentication and encryption.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-036",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.1",
+      "stem": "Which algorithm is symmetric and suitable for bulk data encryption?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "RSA"
+        },
+        {
+          "id": "B",
+          "text": "AES"
+        },
+        {
+          "id": "C",
+          "text": "ECDSA"
+        },
+        {
+          "id": "D",
+          "text": "Diffie-Hellman"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "AES is a symmetric block cipher for bulk encryption; RSA and ECDSA are asymmetric.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-037",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "A network diagram shows a firewall between Internet and DMZ. This placement supports:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Defense in depth"
+        },
+        {
+          "id": "B",
+          "text": "Single sign-off"
+        },
+        {
+          "id": "C",
+          "text": "Open trust zone"
+        },
+        {
+          "id": "D",
+          "text": "Flat network"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Segmenting DMZ from internal networks layers controls for defense in depth.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-038",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.3",
+      "stem": "Hashing a password with a unique salt primarily mitigates:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Rainbow table attacks"
+        },
+        {
+          "id": "B",
+          "text": "SYN floods"
+        },
+        {
+          "id": "C",
+          "text": "ARP poisoning"
+        },
+        {
+          "id": "D",
+          "text": "BGP hijack"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Salting forces attackers to rebuild tables per password hash.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-039",
+      "type": "mcq_multi",
+      "domain": 3,
+      "objective": "3.1",
+      "stem": "Which TWO are asymmetric algorithms? (Select TWO.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "RSA"
+        },
+        {
+          "id": "B",
+          "text": "AES"
+        },
+        {
+          "id": "C",
+          "text": "ECC"
+        },
+        {
+          "id": "D",
+          "text": "3DES"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "RSA and ECC use key pairs; AES and 3DES are symmetric.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-040",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.4",
+      "stem": "Role-based access control (RBAC) assigns permissions based on:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Job function or role"
+        },
+        {
+          "id": "B",
+          "text": "Time of day only"
+        },
+        {
+          "id": "C",
+          "text": "Physical location only"
+        },
+        {
+          "id": "D",
+          "text": "Random lottery"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "RBAC maps permissions to roles rather than individual accounts alone.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-041",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.5",
+      "stem": "A HSM is BEST used for:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Storing keys in tamper-resistant hardware"
+        },
+        {
+          "id": "B",
+          "text": "Public blog hosting"
+        },
+        {
+          "id": "C",
+          "text": "Open Wi-Fi"
+        },
+        {
+          "id": "D",
+          "text": "Unencrypted backups"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "HSMs protect cryptographic keys with hardware-backed security.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-042",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "Zero trust architecture assumes:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Implicit trust inside the corporate LAN"
+        },
+        {
+          "id": "B",
+          "text": "No implicit trust; verify explicitly"
+        },
+        {
+          "id": "C",
+          "text": "VPN equals full trust"
+        },
+        {
+          "id": "D",
+          "text": "Flat network for speed"
+        }
+      ],
+      "answer": [
+        "B"
+      ],
+      "explanation": "Zero trust verifies every access request regardless of network location.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-043",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.3",
+      "stem": "Which PKI component publishes revoked certificates?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "CRL or OCSP"
+        },
+        {
+          "id": "B",
+          "text": "CSR"
+        },
+        {
+          "id": "C",
+          "text": "CSR only"
+        },
+        {
+          "id": "D",
+          "text": "SSID"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "CRLs and OCSP inform clients that a certificate is no longer valid.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-044",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.4",
+      "stem": "Mandatory access control (MAC) is characterized by:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Labels enforced by the system"
+        },
+        {
+          "id": "B",
+          "text": "Users granting access to their files freely"
+        },
+        {
+          "id": "C",
+          "text": "No central policy"
+        },
+        {
+          "id": "D",
+          "text": "SSID hiding"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "MAC uses classification labels enforced by the OS, common in military models.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-045",
+      "type": "mcq_multi",
+      "domain": 3,
+      "objective": "3.5",
+      "stem": "Select ALL factors in MFA. (Select ALL that apply.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Something you know"
+        },
+        {
+          "id": "B",
+          "text": "Something you have"
+        },
+        {
+          "id": "C",
+          "text": "Something you are"
+        },
+        {
+          "id": "D",
+          "text": "Something you guess once"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "MFA combines categories such as knowledge, possession, and biometrics.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-046",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.1",
+      "stem": "Perfect forward secrecy in TLS sessions means:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Past sessions stay secure if long-term keys leak"
+        },
+        {
+          "id": "B",
+          "text": "All traffic is logged"
+        },
+        {
+          "id": "C",
+          "text": "Certificates never expire"
+        },
+        {
+          "id": "D",
+          "text": "HTTP is used"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Ephemeral session keys limit damage if a server private key is later compromised.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-047",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "A jump host (bastion) is primarily used to:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Consolidate administrative access to internal systems"
+        },
+        {
+          "id": "B",
+          "text": "Replace all firewalls"
+        },
+        {
+          "id": "C",
+          "text": "Broadcast SSID"
+        },
+        {
+          "id": "D",
+          "text": "Store cleartext passwords"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Bastions provide a controlled entry point for privileged sessions.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-048",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.3",
+      "stem": "Key stretching with PBKDF2 or Argon2 increases:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cost of offline password guessing"
+        },
+        {
+          "id": "B",
+          "text": "Wireless range"
+        },
+        {
+          "id": "C",
+          "text": "DNS TTL"
+        },
+        {
+          "id": "D",
+          "text": "MTU size"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Stretching slows brute-force attacks against stolen password hashes.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-049",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.4",
+      "stem": "Federation with SAML allows:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Cross-domain SSO using assertions"
+        },
+        {
+          "id": "B",
+          "text": "Unencrypted Telnet"
+        },
+        {
+          "id": "C",
+          "text": "Flat file sharing only"
+        },
+        {
+          "id": "D",
+          "text": "Disable logging"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "SAML exchanges authenticated assertions between identity and service providers.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-050",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.5",
+      "stem": "Full disk encryption protects data primarily when:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Media is lost or stolen while powered off"
+        },
+        {
+          "id": "B",
+          "text": "RAM is dumped live"
+        },
+        {
+          "id": "C",
+          "text": "User shares password"
+        },
+        {
+          "id": "D",
+          "text": "Backup is online"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "FDE secures data at rest on the drive; live memory attacks need other controls.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-051",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.1",
+      "stem": "Which encryption mode should be avoided for new designs due to patterns leaking?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "ECB"
+        },
+        {
+          "id": "B",
+          "text": "GCM"
+        },
+        {
+          "id": "C",
+          "text": "CTR with unique IVs"
+        },
+        {
+          "id": "D",
+          "text": "Authenticated encryption"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "ECB repeats ciphertext blocks for identical plaintext blocks, revealing patterns.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-052",
+      "type": "mcq_multi",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "Which TWO support network segmentation? (Select TWO.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "VLANs"
+        },
+        {
+          "id": "B",
+          "text": "Open flat subnet"
+        },
+        {
+          "id": "C",
+          "text": "Internal firewalls"
+        },
+        {
+          "id": "D",
+          "text": "Shared admin on all hosts"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "VLANs and internal firewalls divide traffic; flat networks and shared admins weaken segmentation.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-053",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.3",
+      "stem": "OAuth 2.0 is primarily an:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Authorization framework"
+        },
+        {
+          "id": "B",
+          "text": "Symmetric cipher"
+        },
+        {
+          "id": "C",
+          "text": "Antivirus engine"
+        },
+        {
+          "id": "D",
+          "text": "Physical lock"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "OAuth delegates access without sharing primary credentials; OpenID Connect adds identity on top.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-041",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "A SIEM correlates events primarily to:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Detect patterns across sources"
+        },
+        {
+          "id": "B",
+          "text": "Replace firewalls"
+        },
+        {
+          "id": "C",
+          "text": "Patch servers"
+        },
+        {
+          "id": "D",
+          "text": "Print badges"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "SIEM aggregation and correlation highlight suspicious activity across logs.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-042",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "Which vulnerability scan type uses credentials to assess patch level?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Authenticated scan"
+        },
+        {
+          "id": "B",
+          "text": "Passive only"
+        },
+        {
+          "id": "C",
+          "text": "Physical walkthrough"
+        },
+        {
+          "id": "D",
+          "text": "Social survey"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Authenticated scans log in to read installed software and missing patches.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-043",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "An analyst sees `whoami` after a successful exploit. This is MOST likely:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Post-exploitation reconnaissance"
+        },
+        {
+          "id": "B",
+          "text": "Backup verification"
+        },
+        {
+          "id": "C",
+          "text": "License audit"
+        },
+        {
+          "id": "D",
+          "text": "Patch Tuesday"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Attackers enumerate identity and privileges after gaining a foothold.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-044",
+      "type": "mcq_multi",
+      "domain": 4,
+      "objective": "4.4",
+      "stem": "Select ALL indicators useful for threat hunting. (Select ALL that apply.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Unusual outbound DNS"
+        },
+        {
+          "id": "B",
+          "text": "Toner low alerts"
+        },
+        {
+          "id": "C",
+          "text": "Rare process parent-child pairs"
+        },
+        {
+          "id": "D",
+          "text": "Scheduled backup success only"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "Anomalous DNS and process trees can signal compromise; routine printer or backup messages rarely do.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-045",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "During containment, the FIRST priority is often to:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Stop spread while preserving evidence"
+        },
+        {
+          "id": "B",
+          "text": "Publicly blame a vendor"
+        },
+        {
+          "id": "C",
+          "text": "Reimage all global PCs immediately without analysis"
+        },
+        {
+          "id": "D",
+          "text": "Disable all logging"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Containment limits blast radius while maintaining forensic value.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-046",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "A WAF is BEST placed:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "In front of web applications"
+        },
+        {
+          "id": "B",
+          "text": "Inside tape library"
+        },
+        {
+          "id": "C",
+          "text": "On user desktops only"
+        },
+        {
+          "id": "D",
+          "text": "Replacing DNS root"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "WAFs inspect HTTP/S traffic to block application-layer attacks.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-047",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "CVSS base score communicates:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Intrinsic severity of a vulnerability"
+        },
+        {
+          "id": "B",
+          "text": "Company stock price"
+        },
+        {
+          "id": "C",
+          "text": "Employee satisfaction"
+        },
+        {
+          "id": "D",
+          "text": "Cable length"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "CVSS quantifies vulnerability characteristics independent of environment.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-048",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "NetFlow data is MOST useful for:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Traffic volume and conversation metadata"
+        },
+        {
+          "id": "B",
+          "text": "Full packet payloads by default"
+        },
+        {
+          "id": "C",
+          "text": "Biometric enrollment"
+        },
+        {
+          "id": "D",
+          "text": "Password hashing"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "NetFlow records flow metadata such as IPs, ports, and bytes without full payloads.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-049",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.4",
+      "stem": "A honeypot primarily:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Deceives attackers and gathers intelligence"
+        },
+        {
+          "id": "B",
+          "text": "Patches databases"
+        },
+        {
+          "id": "C",
+          "text": "Issues employee badges"
+        },
+        {
+          "id": "D",
+          "text": "Signs TLS certificates"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Honeypots lure attackers to study tactics without exposing production assets.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-050",
+      "type": "mcq_multi",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "Which TWO belong in the eradication phase? (Select TWO.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Remove malware and close exploited paths"
+        },
+        {
+          "id": "B",
+          "text": "Initial user awareness poster"
+        },
+        {
+          "id": "C",
+          "text": "Patch or reimage affected systems"
+        },
+        {
+          "id": "D",
+          "text": "Annual risk register update only"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "Eradication removes threats and fixes root causes; awareness and risk registers are broader program activities.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-051",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "EDR differs from traditional antivirus by emphasizing:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Continuous endpoint telemetry and response"
+        },
+        {
+          "id": "B",
+          "text": "Only signature files from 1990"
+        },
+        {
+          "id": "C",
+          "text": "Physical locks"
+        },
+        {
+          "id": "D",
+          "text": "DNS MX records"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "EDR collects behavior on endpoints to detect and respond to advanced threats.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-052",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "A false positive in vulnerability scanning means:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Reported issue is not actually present"
+        },
+        {
+          "id": "B",
+          "text": "Missed real vulnerability"
+        },
+        {
+          "id": "C",
+          "text": "Scan engine offline"
+        },
+        {
+          "id": "D",
+          "text": "User forgot password"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "False positives flag non-issues; false negatives miss real flaws.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-053",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "Which log source BEST shows authentication failures across domain?",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Windows Security / Domain Controller logs"
+        },
+        {
+          "id": "B",
+          "text": "Printer status"
+        },
+        {
+          "id": "C",
+          "text": "Weather API"
+        },
+        {
+          "id": "D",
+          "text": "HDMI EDID"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Domain controllers record Kerberos and logon success/failure events.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-054",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.4",
+      "stem": "Threat intelligence feeds should be:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Validated and integrated with detection"
+        },
+        {
+          "id": "B",
+          "text": "Blindly blocked without context"
+        },
+        {
+          "id": "C",
+          "text": "Stored only on paper"
+        },
+        {
+          "id": "D",
+          "text": "Ignored if free"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Feeds need context and tuning to reduce noise and false positives.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-055",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "Legal hold during incident response preserves:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Relevant evidence for potential litigation"
+        },
+        {
+          "id": "B",
+          "text": "Only unrelated logs"
+        },
+        {
+          "id": "C",
+          "text": "Public marketing drafts"
+        },
+        {
+          "id": "D",
+          "text": "Coffee orders"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Legal hold prevents destruction of data that may be required in court.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-056",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "A deny-by-default firewall policy means:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Block all unless explicitly allowed"
+        },
+        {
+          "id": "B",
+          "text": "Allow all unless blocked"
+        },
+        {
+          "id": "C",
+          "text": "Disable logging"
+        },
+        {
+          "id": "D",
+          "text": "Open RDP to internet"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Default deny is a secure baseline requiring explicit permit rules.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-057",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "Penetration testing with rules of engagement defines:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Scope, limits, and contact procedures"
+        },
+        {
+          "id": "B",
+          "text": "Office lunch menu"
+        },
+        {
+          "id": "C",
+          "text": "SSID name"
+        },
+        {
+          "id": "D",
+          "text": "Toner vendor"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "ROE documents what testers may do and how to handle incidents.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-058",
+      "type": "mcq_multi",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "Select ALL examples of detective controls. (Select ALL that apply.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "SIEM alerting"
+        },
+        {
+          "id": "B",
+          "text": "Security cameras"
+        },
+        {
+          "id": "C",
+          "text": "Encryption at rest"
+        },
+        {
+          "id": "D",
+          "text": "Audit log review"
+        }
+      ],
+      "answer": [
+        "A",
+        "D"
+      ],
+      "explanation": "SIEM and log review detect issues after or as they occur; encryption is primarily preventive/protective.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-059",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.4",
+      "stem": "A SOAR platform helps analysts by:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Automating playbook-driven response"
+        },
+        {
+          "id": "B",
+          "text": "Replacing all staff"
+        },
+        {
+          "id": "C",
+          "text": "Eliminating need for logs"
+        },
+        {
+          "id": "D",
+          "text": "Disabling MFA"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "SOAR orchestrates tools and repeatable workflows for incident handling.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-060",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "Chain of custody documentation ensures:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Evidence integrity and admissibility"
+        },
+        {
+          "id": "B",
+          "text": "Faster internet"
+        },
+        {
+          "id": "C",
+          "text": "Unlimited admin rights"
+        },
+        {
+          "id": "D",
+          "text": "Open Wi-Fi"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Tracking who handled evidence supports trust in forensic findings.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-061",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "IPS compared to IDS typically:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Can block traffic inline"
+        },
+        {
+          "id": "B",
+          "text": "Only prints paper alerts"
+        },
+        {
+          "id": "C",
+          "text": "Cannot see packets"
+        },
+        {
+          "id": "D",
+          "text": "Replaces backups"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "IPS sits inline and can drop malicious sessions; IDS is often passive.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-062",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "Baseline host configuration captures:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Known-good settings for comparison"
+        },
+        {
+          "id": "B",
+          "text": "Random guesses"
+        },
+        {
+          "id": "C",
+          "text": "Only marketing text"
+        },
+        {
+          "id": "D",
+          "text": "Public tweets"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Baselines help detect drift or unauthorized changes.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-063",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "A spike in failed logins from one IP followed by a success suggests:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Possible password spraying or brute force"
+        },
+        {
+          "id": "B",
+          "text": "Normal patch cycle"
+        },
+        {
+          "id": "C",
+          "text": "Scheduled backup"
+        },
+        {
+          "id": "D",
+          "text": "Printer jam"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Many failures then success is a common credential attack pattern.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-064",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.4",
+      "stem": "Sandbox detonation of email attachments helps detect:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Malware behavior in isolation"
+        },
+        {
+          "id": "B",
+          "text": "Cable color"
+        },
+        {
+          "id": "C",
+          "text": "Desk location"
+        },
+        {
+          "id": "D",
+          "text": "HR policy version"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Sandboxes execute suspicious files safely to observe malicious actions.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-065",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.5",
+      "stem": "Recovery time objective (RTO) defines:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Maximum acceptable downtime"
+        },
+        {
+          "id": "B",
+          "text": "Maximum data loss in bytes"
+        },
+        {
+          "id": "C",
+          "text": "Number of employees"
+        },
+        {
+          "id": "D",
+          "text": "Wi-Fi channel"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "RTO is time to restore service; RPO addresses acceptable data loss.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-066",
+      "type": "mcq_multi",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "Which TWO harden remote administration? (Select TWO.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Jump host with MFA"
+        },
+        {
+          "id": "B",
+          "text": "RDP exposed to internet without controls"
+        },
+        {
+          "id": "C",
+          "text": "VPN with device posture check"
+        },
+        {
+          "id": "D",
+          "text": "Shared root password"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "Controlled entry via bastion/VPN and MFA reduces exposure of admin ports.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-067",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.2",
+      "stem": "A credentialed patch scan finding critical CVE should trigger:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Prioritized remediation per change process"
+        },
+        {
+          "id": "B",
+          "text": "Ignore until next year"
+        },
+        {
+          "id": "C",
+          "text": "Disable AV"
+        },
+        {
+          "id": "D",
+          "text": "Public repo of passwords"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Critical findings should enter patch management with appropriate urgency.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d4-068",
+      "type": "mcq_single",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "Centralized logging improves investigations because:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Analysts query one timeline across systems"
+        },
+        {
+          "id": "B",
+          "text": "Logs are deleted faster"
+        },
+        {
+          "id": "C",
+          "text": "Encryption is removed"
+        },
+        {
+          "id": "D",
+          "text": "Only one host logs"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Aggregation speeds correlation during security monitoring and IR.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-039",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.1",
+      "stem": "Qualitative risk analysis uses:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Descriptive scales like high/medium/low"
+        },
+        {
+          "id": "B",
+          "text": "Only exact dollar values"
+        },
+        {
+          "id": "C",
+          "text": "Random number generator"
+        },
+        {
+          "id": "D",
+          "text": "SSID lists"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Qualitative analysis ranks risk with non-numeric scales.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-040",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.2",
+      "stem": "GDPR emphasizes rights such as:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Data subject access and erasure"
+        },
+        {
+          "id": "B",
+          "text": "Mandatory open Wi-Fi"
+        },
+        {
+          "id": "C",
+          "text": "Unlimited retention"
+        },
+        {
+          "id": "D",
+          "text": "No breach notification"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "GDPR grants individuals access, rectification, erasure, and imposes breach duties.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-041",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.3",
+      "stem": "Separation of duties prevents:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "One person controlling entire critical process"
+        },
+        {
+          "id": "B",
+          "text": "Backup testing"
+        },
+        {
+          "id": "C",
+          "text": "MFA"
+        },
+        {
+          "id": "D",
+          "text": "Encryption"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Splitting tasks reduces fraud and error from concentrated privilege.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-042",
+      "type": "mcq_multi",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "Select ALL items typically in a change management ticket. (Select ALL that apply.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Rollback plan"
+        },
+        {
+          "id": "B",
+          "text": "Business justification"
+        },
+        {
+          "id": "C",
+          "text": "Personal social media"
+        },
+        {
+          "id": "D",
+          "text": "Approval record"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "D"
+      ],
+      "explanation": "Changes document reason, approval, and how to revert; personal social posts are irrelevant.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-043",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.5",
+      "stem": "A data retention policy defines:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "How long data is kept and when it is destroyed"
+        },
+        {
+          "id": "B",
+          "text": "Wi-Fi password"
+        },
+        {
+          "id": "C",
+          "text": "Cable color"
+        },
+        {
+          "id": "D",
+          "text": "Desk height"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Retention schedules limit storage duration and support legal requirements.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-044",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.1",
+      "stem": "Annualized loss expectancy (ALE) equals:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "SLE × ARO"
+        },
+        {
+          "id": "B",
+          "text": "MTTR × RPO"
+        },
+        {
+          "id": "C",
+          "text": "SSID × VLAN"
+        },
+        {
+          "id": "D",
+          "text": "CPU × RAM"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "ALE combines single loss expectancy with annualized rate of occurrence.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-045",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.2",
+      "stem": "Data minimization means collecting:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Only what is necessary for the stated purpose"
+        },
+        {
+          "id": "B",
+          "text": "All possible fields forever"
+        },
+        {
+          "id": "C",
+          "text": "Every employee password in cleartext"
+        },
+        {
+          "id": "D",
+          "text": "Unlimited biometrics without cause"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Privacy principles limit collection to required data.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-046",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.3",
+      "stem": "Background checks are an example of:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Personnel security control"
+        },
+        {
+          "id": "B",
+          "text": "Network segmentation"
+        },
+        {
+          "id": "C",
+          "text": "Symmetric encryption"
+        },
+        {
+          "id": "D",
+          "text": "DNSSEC"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Screening hires supports trustworthy personnel security.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-047",
+      "type": "mcq_multi",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "Which TWO are detective administrative controls? (Select TWO.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Audit log review"
+        },
+        {
+          "id": "B",
+          "text": "Security policy"
+        },
+        {
+          "id": "C",
+          "text": "Compliance assessment"
+        },
+        {
+          "id": "D",
+          "text": "Door lock"
+        }
+      ],
+      "answer": [
+        "A",
+        "C"
+      ],
+      "explanation": "Log review and assessments detect issues; policy is preventive managerial; locks are physical.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-048",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.5",
+      "stem": "Geographic redundancy of backups primarily improves:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Availability after regional disaster"
+        },
+        {
+          "id": "B",
+          "text": "Phishing success"
+        },
+        {
+          "id": "C",
+          "text": "Password reuse"
+        },
+        {
+          "id": "D",
+          "text": "Open RDP"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Off-site or geo-diverse copies survive local disasters.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-049",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.1",
+      "stem": "Accepting residual risk requires:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Documented management approval"
+        },
+        {
+          "id": "B",
+          "text": "Silent ignore"
+        },
+        {
+          "id": "C",
+          "text": "Deleting audit logs"
+        },
+        {
+          "id": "D",
+          "text": "Disabling encryption"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Risk acceptance must be conscious and authorized.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-050",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.2",
+      "stem": "PII differs from PHI in that PHI relates to:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Health information under regulations like HIPAA"
+        },
+        {
+          "id": "B",
+          "text": "Public DNS only"
+        },
+        {
+          "id": "C",
+          "text": "Open source licenses"
+        },
+        {
+          "id": "D",
+          "text": "Printer models"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "PHI is health-related identifiable data with specific regulatory protections.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-051",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.3",
+      "stem": "An AUP (acceptable use policy) defines:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Permitted and prohibited use of organizational resources"
+        },
+        {
+          "id": "B",
+          "text": "Cable pinouts only"
+        },
+        {
+          "id": "C",
+          "text": "Weather forecasts"
+        },
+        {
+          "id": "D",
+          "text": "GPU benchmarks"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "AUPs set user expectations and rules for systems and data.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-052",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "Maintenance window communication reduces:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Unexpected outage impact on users"
+        },
+        {
+          "id": "B",
+          "text": "Need for backups"
+        },
+        {
+          "id": "C",
+          "text": "Encryption strength"
+        },
+        {
+          "id": "D",
+          "text": "MFA usage"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Notice helps users and dependent teams plan around changes.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-053",
+      "type": "mcq_multi",
+      "domain": 5,
+      "objective": "5.5",
+      "stem": "Select ALL valid backup types. (Select ALL that apply.)",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Full"
+        },
+        {
+          "id": "B",
+          "text": "Incremental"
+        },
+        {
+          "id": "C",
+          "text": "Differential"
+        },
+        {
+          "id": "D",
+          "text": "Imaginary"
+        }
+      ],
+      "answer": [
+        "A",
+        "B",
+        "C"
+      ],
+      "explanation": "Full, incremental, and differential are standard backup strategies.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-054",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.1",
+      "stem": "Transferring risk via cyber insurance is an example of:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Risk transference"
+        },
+        {
+          "id": "B",
+          "text": "Risk avoidance"
+        },
+        {
+          "id": "C",
+          "text": "Risk ignorance"
+        },
+        {
+          "id": "D",
+          "text": "Zero trust"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Insurance shifts financial impact to a third party.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-055",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.2",
+      "stem": "Right to be forgotten aligns with:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Erasure of personal data when applicable"
+        },
+        {
+          "id": "B",
+          "text": "Infinite log retention"
+        },
+        {
+          "id": "C",
+          "text": "Public password sharing"
+        },
+        {
+          "id": "D",
+          "text": "Disable consent"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Privacy regimes allow erasure requests when legal grounds apply.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-056",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.3",
+      "stem": "Least privilege means users receive:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Minimum access needed for their job"
+        },
+        {
+          "id": "B",
+          "text": "Domain admin by default"
+        },
+        {
+          "id": "C",
+          "text": "All cloud keys"
+        },
+        {
+          "id": "D",
+          "text": "Shared root"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "Limiting rights reduces impact of compromise or mistake.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-057",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "Configuration management database (CMDB) supports change control by:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Tracking CI relationships and versions"
+        },
+        {
+          "id": "B",
+          "text": "Deleting tickets"
+        },
+        {
+          "id": "C",
+          "text": "Blocking MFA"
+        },
+        {
+          "id": "D",
+          "text": "Open telnet"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "CMDBs document assets and dependencies affected by changes.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d5-058",
+      "type": "mcq_single",
+      "domain": 5,
+      "objective": "5.5",
+      "stem": "3-2-1 backup rule recommends:",
+      "choices": [
+        {
+          "id": "A",
+          "text": "Three copies, two media types, one off-site"
+        },
+        {
+          "id": "B",
+          "text": "One copy on same disk"
+        },
+        {
+          "id": "C",
+          "text": "No offline copy"
+        },
+        {
+          "id": "D",
+          "text": "Only cloud with no test restore"
+        }
+      ],
+      "answer": [
+        "A"
+      ],
+      "explanation": "3-2-1 improves resilience against hardware failure and site loss.",
+      "difficulty": "medium"
+    }
+  ],
+  "pbq": [
+    {
+      "id": "pbq-fw-002",
+      "type": "pbq_firewall",
+      "domain": 4,
+      "objective": "4.1",
+      "stem": "Configure firewall rules to meet the scenario. Rules are evaluated top-down; first match wins.",
+      "scenario": "Allow DNS (UDP/TCP 53) from the internal subnet 192.168.10.0/24 to any resolver. Allow HTTPS from 192.168.10.0/24 to the Internet. Deny all other outbound traffic from 192.168.10.0/24.",
+      "existingRules": [],
+      "answer": [
+        {
+          "action": "allow",
+          "protocol": "udp",
+          "source": "192.168.10.0/24",
+          "destination": "any",
+          "port": "53"
+        },
+        {
+          "action": "allow",
+          "protocol": "tcp",
+          "source": "192.168.10.0/24",
+          "destination": "any",
+          "port": "53"
+        },
+        {
+          "action": "allow",
+          "protocol": "tcp",
+          "source": "192.168.10.0/24",
+          "destination": "any",
+          "port": "443"
+        },
+        {
+          "action": "deny",
+          "protocol": "any",
+          "source": "192.168.10.0/24",
+          "destination": "any",
+          "port": "any"
+        }
+      ],
+      "explanation": "Permit DNS over UDP and TCP, allow outbound HTTPS, then explicit deny for the subnet.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pbq-log-002",
+      "type": "pbq_log_triage",
+      "domain": 4,
+      "objective": "4.3",
+      "stem": "Select ALL hosts that show signs of compromise based on the logs.",
+      "scenario": "After a phishing campaign, analysts review endpoint and auth logs for lateral movement.",
+      "logs": [
+        {
+          "id": "e1",
+          "timestamp": "14:10:02",
+          "host": "WS-ENG-22",
+          "message": "User opened attachment; Defender quarantined macro dropper"
+        },
+        {
+          "id": "e2",
+          "timestamp": "14:11:18",
+          "host": "WS-ENG-22",
+          "message": "svchost.exe spawned rundll32.exe loading temp DLL, outbound 45.77.12.8:8080"
+        },
+        {
+          "id": "e3",
+          "timestamp": "14:11:45",
+          "host": "SRV-FILE01",
+          "message": "Scheduled backup completed successfully"
+        },
+        {
+          "id": "e4",
+          "timestamp": "14:12:03",
+          "host": "WS-HR-05",
+          "message": "Successful login via MFA from corporate VPN"
+        },
+        {
+          "id": "e5",
+          "timestamp": "14:12:30",
+          "host": "WS-SAL-11",
+          "message": "Multiple failed Kerberos logons for svc_scan then success from WS-ENG-22"
+        },
+        {
+          "id": "e6",
+          "timestamp": "14:13:01",
+          "host": "PRT-LOBBY",
+          "message": "Paper jam cleared"
+        }
+      ],
+      "answer": [
+        "WS-ENG-22",
+        "WS-SAL-11"
+      ],
+      "explanation": "WS-ENG-22 shows post-phish execution and C2; WS-SAL-11 reflects suspected lateral movement via svc_scan.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "pbq-seq-002",
+      "type": "pbq_sequence",
+      "domain": 5,
+      "objective": "5.4",
+      "stem": "Order the change management steps for a standard production change.",
+      "scenario": "Arrange from first to last for a normal change request before deployment.",
+      "steps": [
+        {
+          "id": "s1",
+          "text": "Submit change request with risk and rollback plan"
+        },
+        {
+          "id": "s2",
+          "text": "Peer/ CAB review and approval"
+        },
+        {
+          "id": "s3",
+          "text": "Implement during approved maintenance window"
+        },
+        {
+          "id": "s4",
+          "text": "Validate and close change with documentation"
+        }
+      ],
+      "answer": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ],
+      "explanation": "Request and plan first, then approval, controlled implementation, and post-change validation.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pbq-topo-002",
+      "type": "pbq_topology",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "Place the correct security control in each network location.",
+      "scenario": "Remote users → Internet → [A] → corporate apps in cloud VPC → [B] → sensitive database subnet.",
+      "slots": [
+        {
+          "id": "access",
+          "label": "Remote user entry",
+          "options": [
+            "VPN/ZTNA with MFA",
+            "Open Telnet gateway",
+            "Public SMB share",
+            "Unfiltered RDP"
+          ],
+          "answer": "VPN/ZTNA with MFA"
+        },
+        {
+          "id": "eastwest",
+          "label": "Between app tier and database subnet",
+          "options": [
+            "Micro-segmentation firewall / security group rules",
+            "Flat /24 with any-any",
+            "Guest Wi-Fi",
+            "NTP only"
+          ],
+          "answer": "Micro-segmentation firewall / security group rules"
+        },
+        {
+          "id": "secrets",
+          "label": "Application credential storage",
+          "options": [
+            "Managed secrets vault with rotation",
+            "Hard-coded in source repo",
+            "Sticky note on monitor",
+            "Cleartext config in ticket"
+          ],
+          "answer": "Managed secrets vault with rotation"
+        }
+      ],
+      "explanation": "Remote access needs authenticated tunneling; east-west controls limit app-to-DB exposure; vaults protect credentials.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pbq-match-003",
+      "type": "pbq_match",
+      "domain": 2,
+      "objective": "2.3",
+      "stem": "Match each secure protocol to its typical use case.",
+      "scenario": "Associate the protocol with the BEST description.",
+      "pairs": [
+        {
+          "leftId": "L1",
+          "left": "TLS 1.3",
+          "rightId": "R1",
+          "right": "Encrypts HTTPS web sessions"
+        },
+        {
+          "leftId": "L2",
+          "left": "IPsec",
+          "rightId": "R2",
+          "right": "Site-to-site or host VPN tunnel"
+        },
+        {
+          "leftId": "L3",
+          "left": "SSH",
+          "rightId": "R3",
+          "right": "Encrypted remote administration and SFTP"
+        },
+        {
+          "leftId": "L4",
+          "left": "S/MIME",
+          "rightId": "R4",
+          "right": "Signed and encrypted email messages"
+        }
+      ],
+      "distractors": [
+        "Cleartext Telnet for production",
+        "WEP for new deployments"
+      ],
+      "explanation": "TLS protects web traffic; IPsec builds VPNs; SSH secures admin and file transfer; S/MIME protects email.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "pbq-fw-003",
+      "type": "pbq_firewall",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "Configure firewall rules to meet the scenario. Rules are evaluated top-down; first match wins.",
+      "scenario": "Database server 10.20.30.40 may receive SQL (TCP 1433) ONLY from app server 10.20.30.10. App server may receive HTTPS (443) from the load balancer 10.20.30.5 only. Deny all other traffic to 10.20.30.40 and 10.20.30.10.",
+      "existingRules": [],
+      "answer": [
+        {
+          "action": "allow",
+          "protocol": "tcp",
+          "source": "10.20.30.10",
+          "destination": "10.20.30.40",
+          "port": "1433"
+        },
+        {
+          "action": "deny",
+          "protocol": "any",
+          "source": "any",
+          "destination": "10.20.30.40",
+          "port": "any"
+        },
+        {
+          "action": "allow",
+          "protocol": "tcp",
+          "source": "10.20.30.5",
+          "destination": "10.20.30.10",
+          "port": "443"
+        },
+        {
+          "action": "deny",
+          "protocol": "any",
+          "source": "any",
+          "destination": "10.20.30.10",
+          "port": "any"
+        }
+      ],
+      "explanation": "Restrict DB to app tier on 1433, LB to app on 443, with explicit denies for each host.",
+      "difficulty": "hard"
+    }
+  ]
+}

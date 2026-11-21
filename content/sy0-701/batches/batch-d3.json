@@ -1,0 +1,293 @@
+{
+  "mcq": [
+    {
+      "id": "d3-036",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.1",
+      "stem": "Placing a WAF in front of a public web app primarily protects against:",
+      "choices": [
+        { "id": "A", "text": "Common web exploits such as SQLi and XSS" },
+        { "id": "B", "text": "Lost badge cloning only" },
+        { "id": "C", "text": "HVAC failure" },
+        { "id": "D", "text": "Toner exhaustion" }
+      ],
+      "answer": ["A"],
+      "explanation": "WAFs inspect HTTP(S) and block many application-layer attacks.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d3-037",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "A screened subnet (DMZ) is used to:",
+      "choices": [
+        { "id": "A", "text": "Host internet-facing services separated from internal networks" },
+        { "id": "B", "text": "Store offline cold backups only" },
+        { "id": "C", "text": "Replace all IAM systems" },
+        { "id": "D", "text": "Disable logging legally" }
+      ],
+      "answer": ["A"],
+      "explanation": "DMZs isolate public services so compromise is less likely to reach the intranet.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d3-038",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "Zero Trust architecture MOST emphasizes:",
+      "choices": [
+        { "id": "A", "text": "Continuous verification and least-privilege access regardless of location" },
+        { "id": "B", "text": "Trusting all traffic inside the corporate LAN" },
+        { "id": "C", "text": "Removing MFA for convenience" },
+        { "id": "D", "text": "Flat networks with one VLAN" }
+      ],
+      "answer": ["A"],
+      "explanation": "Zero Trust never assumes trust based on network location alone.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-039",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.3",
+      "stem": "Which cloud model gives the customer the MOST responsibility for OS patching?",
+      "choices": [
+        { "id": "A", "text": "IaaS" },
+        { "id": "B", "text": "SaaS email only" },
+        { "id": "C", "text": "Fully managed FaaS with no OS access" },
+        { "id": "D", "text": "Provider-managed PaaS runtimes exclusively" }
+      ],
+      "answer": ["A"],
+      "explanation": "In IaaS the customer typically manages the guest OS and above.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-040",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.3",
+      "stem": "Customer-managed encryption keys in a public cloud MOST improve:",
+      "choices": [
+        { "id": "A", "text": "Control over who can decrypt cloud-stored data" },
+        { "id": "B", "text": "Physical cage ownership of the provider" },
+        { "id": "C", "text": "ISP peering agreements" },
+        { "id": "D", "text": "Monitor refresh rates" }
+      ],
+      "answer": ["A"],
+      "explanation": "CMK/BYOK keeps cryptographic control with the customer organization.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-041",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.4",
+      "stem": "For enterprise Wi-Fi, WPA3-Enterprise with 802.1X is preferred over PSK because it:",
+      "choices": [
+        { "id": "A", "text": "Uses per-user credentials and stronger authentication" },
+        { "id": "B", "text": "Removes the need for certificates forever" },
+        { "id": "C", "text": "Disables encryption" },
+        { "id": "D", "text": "Requires open SSIDs" }
+      ],
+      "answer": ["A"],
+      "explanation": "Enterprise mode authenticates individuals/devices instead of one shared passphrase.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-042",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.1",
+      "stem": "Jump hosts (bastions) are used to:",
+      "choices": [
+        { "id": "A", "text": "Provide controlled administrative access into restricted networks" },
+        { "id": "B", "text": "Host public DNS recursively for the internet" },
+        { "id": "C", "text": "Replace SIEM correlation" },
+        { "id": "D", "text": "Store plaintext passwords" }
+      ],
+      "answer": ["A"],
+      "explanation": "Bastions concentrate and monitor privileged remote admin paths.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-043",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "An east-west firewall between app and database tiers supports:",
+      "choices": [
+        { "id": "A", "text": "Segmentation and least-privilege network flows" },
+        { "id": "B", "text": "Only northbound CDN caching" },
+        { "id": "C", "text": "Disabling TLS" },
+        { "id": "D", "text": "Sharing one service account everywhere" }
+      ],
+      "answer": ["A"],
+      "explanation": "Internal firewalls constrain lateral traffic between tiers.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-044",
+      "type": "mcq_multi",
+      "domain": 3,
+      "objective": "3.3",
+      "stem": "Which TWO are shared-responsibility concerns in SaaS?",
+      "choices": [
+        { "id": "A", "text": "Customer identity and access configuration" },
+        { "id": "B", "text": "Customer data classification and sharing settings" },
+        { "id": "C", "text": "Customer patching of the provider’s hypervisor" },
+        { "id": "D", "text": "Customer replacement of the provider’s data-center generators" }
+      ],
+      "answer": ["A", "B"],
+      "explanation": "In SaaS, customers still own identities, permissions, and data governance.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d3-045",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.4",
+      "stem": "Disabling WPS on wireless APs mitigates:",
+      "choices": [
+        { "id": "A", "text": "Weak push-button / PIN enrollment attacks" },
+        { "id": "B", "text": "BGP route leaks" },
+        { "id": "C", "text": "SQL injection" },
+        { "id": "D", "text": "Cold-aisle containment failure" }
+      ],
+      "answer": ["A"],
+      "explanation": "WPS has historically been brute-forceable; disabling it hardens Wi-Fi.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-046",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.1",
+      "stem": "TLS inspection (SSL/TLS decryption) on a proxy requires careful handling of:",
+      "choices": [
+        { "id": "A", "text": "Privacy, certificates, and exception lists for sensitive apps" },
+        { "id": "B", "text": "Only toner levels" },
+        { "id": "C", "text": "Only keyboard layouts" },
+        { "id": "D", "text": "Only HDMI HDCP" }
+      ],
+      "answer": ["A"],
+      "explanation": "Breaking TLS for inspection impacts privacy and can break cert-pinned apps.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d3-047",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "An air-gapped network is MOST appropriate when:",
+      "choices": [
+        { "id": "A", "text": "Systems must have no direct connectivity to untrusted networks" },
+        { "id": "B", "text": "Users need unrestricted internet browsing" },
+        { "id": "C", "text": "Cloud SaaS is mandatory" },
+        { "id": "D", "text": "Public Wi-Fi is the only path" }
+      ],
+      "answer": ["A"],
+      "explanation": "Air gaps isolate high-value or OT systems from external reachability.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d3-048",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.3",
+      "stem": "Infrastructure as Code (IaC) security scanning helps catch:",
+      "choices": [
+        { "id": "A", "text": "Misconfigurations before cloud resources are deployed" },
+        { "id": "B", "text": "Physical lock failures" },
+        { "id": "C", "text": "Badge printer jams" },
+        { "id": "D", "text": "Monitor burn-in" }
+      ],
+      "answer": ["A"],
+      "explanation": "Scanning templates finds open SGs, public buckets, and similar issues early.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-049",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.1",
+      "stem": "API gateways commonly enforce:",
+      "choices": [
+        { "id": "A", "text": "Authentication, rate limits, and schema validation" },
+        { "id": "B", "text": "Only physical escort policies" },
+        { "id": "C", "text": "Only UPS runtime" },
+        { "id": "D", "text": "Only desk height standards" }
+      ],
+      "answer": ["A"],
+      "explanation": "Gateways centralize API security controls before backends are reached.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-050",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.4",
+      "stem": "Which protocol should replace Telnet for remote CLI management?",
+      "choices": [
+        { "id": "A", "text": "SSH" },
+        { "id": "B", "text": "HTTP without TLS" },
+        { "id": "C", "text": "SNMPv1 community strings in cleartext only" },
+        { "id": "D", "text": "TFTP" }
+      ],
+      "answer": ["A"],
+      "explanation": "SSH encrypts remote administration; Telnet sends credentials in the clear.",
+      "difficulty": "easy"
+    },
+    {
+      "id": "d3-051",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.2",
+      "stem": "Container image signing MOST improves:",
+      "choices": [
+        { "id": "A", "text": "Assurance that deployed images come from trusted publishers" },
+        { "id": "B", "text": "CPU clock accuracy" },
+        { "id": "C", "text": "Cable color coding" },
+        { "id": "D", "text": "Desk phone volume" }
+      ],
+      "answer": ["A"],
+      "explanation": "Signatures verify image integrity and provenance in the pipeline.",
+      "difficulty": "medium"
+    },
+    {
+      "id": "d3-052",
+      "type": "mcq_multi",
+      "domain": 3,
+      "objective": "3.1",
+      "stem": "Which TWO belong in a hardened baseline for internet-facing Linux servers?",
+      "choices": [
+        { "id": "A", "text": "Disable unused services and close unused ports" },
+        { "id": "B", "text": "Apply timely security patches" },
+        { "id": "C", "text": "Enable anonymous root FTP" },
+        { "id": "D", "text": "Permit password auth from the entire internet without MFA" }
+      ],
+      "answer": ["A", "B"],
+      "explanation": "Reducing services and patching are foundational hardening steps.",
+      "difficulty": "hard"
+    },
+    {
+      "id": "d3-053",
+      "type": "mcq_single",
+      "domain": 3,
+      "objective": "3.3",
+      "stem": "CASB solutions are primarily used to:",
+      "choices": [
+        { "id": "A", "text": "Visibly control and monitor sanctioned/unsanctioned cloud app usage" },
+        { "id": "B", "text": "Replace fire extinguishers" },
+        { "id": "C", "text": "Tune RAID stripe size only" },
+        { "id": "D", "text": "Manage cafeteria menus" }
+      ],
+      "answer": ["A"],
+      "explanation": "Cloud access security brokers enforce policy on cloud services.",
+      "difficulty": "medium"
+    }
+  ],
+  "pbq": []
+}
