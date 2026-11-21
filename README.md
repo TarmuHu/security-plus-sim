@@ -13,6 +13,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
+## GitHub Pages
+
+Static export (`output: "export"`) deploys via GitHub Actions on push to `main`.
+
+1. Repo **Settings → Pages → Source**: **GitHub Actions**
+2. For free GitHub accounts, Pages usually needs a **public** repo (this one is private by default)
+3. Site URL after deploy: `https://tarmuhu.github.io/security-plus-sim/`
+
+Local Pages-shaped build: `npm run build:pages` (writes to `out/`).
+
 ## Navigation model
 
 1. **`/`** — Choose a **certification** (Security+, A+, Network+ placeholders)

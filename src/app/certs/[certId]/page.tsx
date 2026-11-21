@@ -2,7 +2,11 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProductGrid } from "@/components/ProductGrid";
 import { ProductHeader } from "@/components/ProductHeader";
-import { getCert } from "@/lib/certs";
+import { CERTIFICATIONS, getCert } from "@/lib/certs";
+
+export function generateStaticParams() {
+  return CERTIFICATIONS.map((c) => ({ certId: c.id }));
+}
 
 export default async function CertHubPage({
   params,

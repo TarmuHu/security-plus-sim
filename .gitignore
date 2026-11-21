@@ -14,6 +14,7 @@
 # next.js
 /.next/
 /out/
+# GitHub Pages static export output is uploaded by Actions, not committed
 
 # production
 /build

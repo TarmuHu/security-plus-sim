@@ -1,7 +1,11 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ProductHeader } from "@/components/ProductHeader";
-import { getGuide } from "@/lib/guides";
+import { GUIDES, getGuide } from "@/lib/guides";
+
+export function generateStaticParams() {
+  return GUIDES.map((g) => ({ slug: g.slug }));
+}
 
 export default async function GuideDetailPage({
   params,
